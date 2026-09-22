@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "SNB Events Agency | Corporate Events",
     description:
       "SNB Events Agency designs, produces, and executes high-end corporate events: offsites, retreats, brand activations, and product launches.",
-    url: "https://snbagency.com",
+    url: "https://www.snbagency.com",
     siteName: "SNB Events Agency",
     images: [
       {
