@@ -58,7 +58,7 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="min-h-screen flex items-end pb-20 md:pb-28 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-x-0 top-0 bottom-14 md:bottom-28 z-0">
           <img
             src="/Hero.jpg"
             alt=""
