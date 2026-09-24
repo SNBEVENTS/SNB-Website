@@ -13,7 +13,7 @@ export default function Footer() {
                 alt="SNB Event Agency"
                 width={280}
                 height={140}
-                className="h-28 w-auto object-contain mix-blend-multiply"
+                className="h-24 w-auto object-contain mix-blend-multiply"
               />
             </Link>
             <p className="text-sm text-muted leading-relaxed max-w-sm mb-8">
