@@ -16,7 +16,7 @@ export default function Nav() {
             alt="SNB Event Agency"
             width={240}
             height={120}
-            className="h-20 w-auto object-contain mix-blend-multiply"
+            className="h-24 w-auto object-contain mix-blend-multiply"
             priority
           />
         </Link>

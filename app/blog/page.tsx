@@ -60,7 +60,7 @@ export const posts = [
 export default function Blog() {
   return (
     <>
-      <section className="pt-24 pb-24 px-6 border-b border-ink-border">
+      <section className="pt-40 pb-24 px-6 border-b border-ink-border">
         <div className="max-w-7xl mx-auto">
           <p className="text-xs font-semibold text-pop-orange tracking-[0.2em] uppercase mb-5">
             Blog
