@@ -35,8 +35,8 @@ const services = [
   },
 ];
 
-// Brands whose wordmark is lower-case; everything else renders uppercase.
-const exactCase = ["deel.com"];
+// Brands whose wordmark keeps its own casing; everything else renders uppercase.
+const exactCase = ["deel.com", "Junior.ai"];
 
 const clients = [
   "Puig",
