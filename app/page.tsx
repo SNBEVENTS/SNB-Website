@@ -35,6 +35,9 @@ const services = [
   },
 ];
 
+// Brands whose wordmark is lower-case; everything else renders uppercase.
+const exactCase = ["deel.com"];
+
 const clients = [
   "Puig",
   "deel.com",
@@ -120,7 +123,9 @@ export default function Home() {
             {clients.map((name) => (
               <div
                 key={name}
-                className="text-[11px] font-semibold text-muted/70 tracking-[0.2em] uppercase text-center"
+                className={`text-[11px] font-semibold text-muted/70 tracking-[0.2em] text-center ${
+                  exactCase.includes(name) ? "normal-case" : "uppercase"
+                }`}
               >
                 {name}
               </div>
