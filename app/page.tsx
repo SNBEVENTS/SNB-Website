@@ -25,8 +25,8 @@ const services = [
     title: "Brand Activations",
     badge: null,
     desc: "Bold, intentional, built for impact. We turn your brand moment into an experience people actually talk about.",
-    img: "/brand-activation.jpg",
-    position: "object-center",
+    img: "/brand-activation-fomo.jpg",
+    position: "object-[center_70%]",
   },
   {
     n: "03",
