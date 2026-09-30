@@ -133,7 +133,7 @@ export default function Home() {
                   <Image
                     src={client.logo}
                     alt={client.name}
-                    className="max-h-full w-auto max-w-full md:max-w-[130px] object-contain mix-blend-multiply"
+                    className="max-h-full w-auto max-w-full md:max-w-[130px] object-contain mix-blend-multiply grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100"
                   />
                 ) : (
                   <span className="text-[11px] font-semibold text-muted/70 tracking-[0.2em] uppercase text-center">
