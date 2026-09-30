@@ -6,7 +6,7 @@ import preplyLogo from "@/public/logos/preply.png";
 import purinaLogo from "@/public/logos/purina.png";
 import juniorLogo from "@/public/logos/junior.png";
 import trussLogo from "@/public/logos/truss.png";
-import kodifyLogo from "@/public/logos/kodify.png";
+import codewayLogo from "@/public/logos/codeway.png";
 import havaianasLogo from "@/public/logos/havaianas.png";
 import perkLogo from "@/public/logos/perk.webp";
 import ritualsLogo from "@/public/logos/rituals.webp";
@@ -55,7 +55,7 @@ const clients = [
   { name: "Purina", logo: purinaLogo },
   { name: "Junior.ai", logo: juniorLogo },
   { name: "Truss", logo: trussLogo },
-  { name: "Kodify", logo: kodifyLogo, maxH: "max-h-[60px]" },
+  { name: "Codeway", logo: codewayLogo, maxH: "max-h-[60px]" },
   { name: "Havaianas", logo: havaianasLogo, maxW: "max-w-[108px]" },
   { name: "Perk", logo: perkLogo },
 ];
