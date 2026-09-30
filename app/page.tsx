@@ -47,14 +47,14 @@ const services = [
 
 // Clients without a logo file fall back to their name in text.
 const clients = [
-  { name: "Puig", logo: puigLogo },
+  { name: "Puig", logo: puigLogo, maxW: "max-w-[100px]" },
   { name: "deel.com", logo: deelLogo },
   { name: "Preply", logo: preplyLogo },
   { name: "Purina", logo: purinaLogo },
   { name: "Junior.ai", logo: juniorLogo },
   { name: "Truss", logo: trussLogo },
   { name: "Kodify", logo: kodifyLogo },
-  { name: "Havaianas", logo: havaianasLogo },
+  { name: "Havaianas", logo: havaianasLogo, maxW: "max-w-[108px]" },
   { name: "Perk", logo: perkLogo },
 ];
 
@@ -133,7 +133,9 @@ export default function Home() {
                   <Image
                     src={client.logo}
                     alt={client.name}
-                    className="max-h-full w-auto max-w-full md:max-w-[130px] object-contain mix-blend-multiply grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100"
+                    className={`max-h-full w-auto object-contain mix-blend-multiply grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 ${
+                      client.maxW ?? "max-w-full md:max-w-[130px]"
+                    }`}
                   />
                 ) : (
                   <span className="text-[11px] font-semibold text-muted/70 tracking-[0.2em] uppercase text-center">
