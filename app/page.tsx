@@ -35,6 +35,19 @@ const services = [
   },
 ];
 
+const clients = [
+  "Puig",
+  "Deel",
+  "Rituals",
+  "Preply",
+  "Purina",
+  "Junior.ai",
+  "EBS Bartender School",
+  "Truss",
+  "Kodify",
+  "Havaianas",
+];
+
 const testimonials = [
   {
     quote: "SNB made our annual offsite the best one yet. Every detail was handled — we just showed up.",
@@ -93,6 +106,25 @@ export default function Home() {
             >
               Our Services
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Trusted by — client logos */}
+      <section className="py-12 px-6 border-b border-ink-border">
+        <div className="max-w-7xl mx-auto">
+          <p className="text-[11px] font-semibold text-muted tracking-[0.3em] uppercase mb-8 text-center">
+            Trusted By
+          </p>
+          <div className="grid grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-6 items-center justify-items-center">
+            {clients.map((name) => (
+              <div
+                key={name}
+                className="text-[11px] font-semibold text-muted/70 tracking-[0.2em] uppercase text-center"
+              >
+                {name}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -241,33 +273,6 @@ export default function Home() {
                 <p className="text-[11px] text-muted tracking-wide mt-1">{t.role}</p>
               </div>
             ))}
-          </div>
-
-          <div className="mt-16 pt-12 border-t border-ink-border">
-            <p className="text-[11px] font-semibold text-muted tracking-[0.3em] uppercase mb-8 text-center">
-              Trusted By
-            </p>
-            <div className="grid grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-6 items-center justify-items-center">
-              {[
-                "Junior.ai",
-                "Puig",
-                "Preply",
-                "EBS Bartender School",
-                "Truss",
-                "Rituals",
-                "Kodify",
-                "Deel",
-                "Purina",
-                "Havanna",
-              ].map((name) => (
-                <div
-                  key={name}
-                  className="text-[11px] font-semibold text-muted/70 tracking-[0.2em] uppercase text-center"
-                >
-                  {name}
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
