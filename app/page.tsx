@@ -146,7 +146,7 @@ export default function Home() {
                   alt={s.title}
                   className={`absolute inset-0 w-full h-full object-cover ${s.position} group-hover:scale-105 transition-transform duration-700`}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/40 to-transparent group-hover:from-ink/80 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/60 to-ink/15 group-hover:from-ink/80 transition-colors duration-300" />
                 <div className="absolute inset-0 p-8 flex flex-col justify-end">
                   <div className="flex items-center gap-3 mb-2">
                     <span className="text-[11px] text-gold font-semibold tracking-[0.3em] uppercase">
