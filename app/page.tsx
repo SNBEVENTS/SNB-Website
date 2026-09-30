@@ -50,7 +50,7 @@ const services = [
 const clients = [
   { name: "Puig", logo: puigLogo, maxW: "max-w-[100px]" },
   { name: "deel.com", logo: deelLogo },
-  { name: "Rituals", logo: ritualsLogo, maxW: "max-w-full md:max-w-[175px]" },
+  { name: "Rituals", logo: ritualsLogo, maxW: "max-w-full md:max-w-[140px]" },
   { name: "Preply", logo: preplyLogo },
   { name: "Purina", logo: purinaLogo },
   { name: "Junior.ai", logo: juniorLogo },
