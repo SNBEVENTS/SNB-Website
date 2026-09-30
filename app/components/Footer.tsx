@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import logo from "@/public/logo.png";
 
 export default function Footer() {
   return (
@@ -9,10 +10,8 @@ export default function Footer() {
           <div className="md:col-span-2">
             <Link href="/" className="inline-flex mb-5">
               <Image
-                src="/logo.png"
+                src={logo}
                 alt="SNB Event Agency"
-                width={280}
-                height={140}
                 className="h-28 w-auto object-contain mix-blend-multiply"
               />
             </Link>

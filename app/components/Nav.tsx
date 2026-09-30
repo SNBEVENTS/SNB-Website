@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import logo from "@/public/logo.png";
 
 const links = [
   { label: "About", href: "/about" },
@@ -12,10 +13,8 @@ export default function Nav() {
       <nav className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
-            src="/logo.png"
+            src={logo}
             alt="SNB Event Agency"
-            width={240}
-            height={120}
             className="h-24 w-auto object-contain mix-blend-multiply"
             priority
           />
