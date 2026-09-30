@@ -22,12 +22,13 @@ const services = [
   },
   {
     n: "02",
-    title: "Brand Activations",
+    title: "Corporate & Company Events",
     badge: null,
-    desc: "Bold, intentional, built for impact. We turn your brand moment into an experience people actually talk about.",
-    img: "/brand-activation-fomo.jpg",
-    position: "object-[center_70%]",
+    desc: "Summer parties, end-of-year nights, company socials — we handle everything so you can actually enjoy it.",
+    img: "/Hero.jpg",
+    position: "object-center",
   },
+
   {
     n: "03",
     title: "Team Building & Experiences",
@@ -38,11 +39,11 @@ const services = [
   },
   {
     n: "04",
-    title: "Corporate & Company Events",
+    title: "Brand Activations",
     badge: null,
-    desc: "Summer parties, end-of-year nights, company socials — we handle everything so you can actually enjoy it.",
-    img: "/Hero.jpg",
-    position: "object-center",
+    desc: "Bold, intentional, built for impact. We turn your brand moment into an experience people actually talk about.",
+    img: "/brand-activation-fomo.jpg",
+    position: "object-[center_70%]",
   },
 ];
 

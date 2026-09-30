@@ -19,20 +19,21 @@ const services = [
   },
   {
     n: "02",
-    title: "Brand Activations",
+    title: "Corporate & Company Events",
     badge: null,
-    tagline: "Make the market take notice.",
+    tagline: "From summer parties to end-of-year celebrations.",
     description:
-      "A great brand launch is a statement. It sets the tone for everything that follows. We create launch experiences that are bold, intentional, and built for impact — from intimate media previews to large-scale consumer activations. A brand event isn't just an event; it's a positioning exercise.",
+      "Not every event needs to be a landmark moment — but every event deserves to be done well. We help local businesses and growing companies organise standout staff parties, summer socials, and end-of-year celebrations. Whether you're a team of 20 or 200, we handle the planning and logistics so you can show up and enjoy it.",
     details: [
-      "Product launches",
-      "Brand activations",
-      "Press & media events",
-      "Consumer experiences",
+      "Summer & seasonal parties",
+      "End-of-year celebrations",
+      "Company socials & away days",
+      "Local business events",
     ],
-    image: "/brand-activation.jpg",
+    image: "/Hero.jpg",
     imagePosition: "object-center",
   },
+
   {
     n: "03",
     title: "Team Building & Experiences",
@@ -51,19 +52,19 @@ const services = [
   },
   {
     n: "04",
-    title: "Corporate & Company Events",
+    title: "Brand Activations",
     badge: null,
-    tagline: "From summer parties to end-of-year celebrations.",
+    tagline: "Make the market take notice.",
     description:
-      "Not every event needs to be a landmark moment — but every event deserves to be done well. We help local businesses and growing companies organise standout staff parties, summer socials, and end-of-year celebrations. Whether you're a team of 20 or 200, we handle the planning and logistics so you can show up and enjoy it.",
+      "A great brand launch is a statement. It sets the tone for everything that follows. We create launch experiences that are bold, intentional, and built for impact — from intimate media previews to large-scale consumer activations. A brand event isn't just an event; it's a positioning exercise.",
     details: [
-      "Summer & seasonal parties",
-      "End-of-year celebrations",
-      "Company socials & away days",
-      "Local business events",
+      "Product launches",
+      "Brand activations",
+      "Press & media events",
+      "Consumer experiences",
     ],
-    image: "/Hero.jpg",
-    imagePosition: "object-center",
+    image: "/brand-activation-fomo.jpg",
+    imagePosition: "object-[center_55%]",
   },
 ];
 
