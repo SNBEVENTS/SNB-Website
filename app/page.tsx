@@ -294,9 +294,12 @@ export default function Home() {
                   &ldquo;{t.quote}&rdquo;
                 </p>
                 <p className="text-sm font-semibold text-parchment">{t.name}</p>
-                {t.role && (
-                  <p className="text-[11px] text-muted tracking-wide mt-1">{t.role}</p>
-                )}
+                <p
+                  className="text-[11px] text-muted tracking-wide mt-1"
+                  aria-hidden={!t.role}
+                >
+                  {t.role || "\u00A0"}
+                </p>
               </div>
             ))}
           </div>
