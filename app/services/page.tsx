@@ -30,8 +30,8 @@ const services = [
       "Press & media events",
       "Consumer experiences",
     ],
-    image: "/brand-activation.jpg",
-    imagePosition: "object-center",
+    image: "/brand-activation-fomo.jpg",
+    imagePosition: "object-[center_55%]",
   },
   {
     n: "03",
