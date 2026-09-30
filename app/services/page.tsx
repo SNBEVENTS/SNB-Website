@@ -19,22 +19,6 @@ const services = [
   },
   {
     n: "02",
-    title: "Brand Activations",
-    badge: null,
-    tagline: "Make the market take notice.",
-    description:
-      "A great brand launch is a statement. It sets the tone for everything that follows. We create launch experiences that are bold, intentional, and built for impact — from intimate media previews to large-scale consumer activations. A brand event isn't just an event; it's a positioning exercise.",
-    details: [
-      "Product launches",
-      "Brand activations",
-      "Press & media events",
-      "Consumer experiences",
-    ],
-    image: "/brand-activation-fomo.jpg",
-    imagePosition: "object-[center_55%]",
-  },
-  {
-    n: "03",
     title: "Team Building & Experiences",
     badge: null,
     tagline: "Invest in your people.",
@@ -47,6 +31,22 @@ const services = [
       "Employee milestone celebrations",
     ],
     image: "/team-building.jpg",
+    imagePosition: "object-[center_55%]",
+  },
+  {
+    n: "03",
+    title: "Brand Activations",
+    badge: null,
+    tagline: "Make the market take notice.",
+    description:
+      "A great brand launch is a statement. It sets the tone for everything that follows. We create launch experiences that are bold, intentional, and built for impact — from intimate media previews to large-scale consumer activations. A brand event isn't just an event; it's a positioning exercise.",
+    details: [
+      "Product launches",
+      "Brand activations",
+      "Press & media events",
+      "Consumer experiences",
+    ],
+    image: "/brand-activation-fomo.jpg",
     imagePosition: "object-[center_55%]",
   },
   {
