@@ -10,7 +10,6 @@ import kodifyLogo from "@/public/logos/kodify.png";
 import havaianasLogo from "@/public/logos/havaianas.png";
 import perkLogo from "@/public/logos/perk.webp";
 import ritualsLogo from "@/public/logos/rituals.webp";
-import codewayLogo from "@/public/logos/codeway.png";
 
 const services = [
   {
@@ -56,10 +55,9 @@ const clients = [
   { name: "Purina", logo: purinaLogo },
   { name: "Junior.ai", logo: juniorLogo },
   { name: "Truss", logo: trussLogo },
-  { name: "Kodify", logo: kodifyLogo },
+  { name: "Kodify", logo: kodifyLogo, maxH: "max-h-[60px]" },
   { name: "Havaianas", logo: havaianasLogo, maxW: "max-w-[108px]" },
   { name: "Perk", logo: perkLogo },
-  { name: "Codeway", logo: codewayLogo, maxH: "max-h-[60px]" },
 ];
 
 const testimonials = [
@@ -130,7 +128,7 @@ export default function Home() {
           <p className="text-[11px] font-semibold text-muted tracking-[0.3em] uppercase mb-8 text-center">
             Trusted By
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8 items-center justify-items-center">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-x-8 gap-y-8 items-center justify-items-center">
             {clients.map((client) => (
               <div key={client.name} className="flex h-10 items-center justify-center">
                 {client.logo ? (
