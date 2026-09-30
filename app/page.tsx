@@ -1,4 +1,13 @@
 import Link from "next/link";
+import Image from "next/image";
+import puigLogo from "@/public/logos/puig.png";
+import deelLogo from "@/public/logos/deel.png";
+import preplyLogo from "@/public/logos/preply.webp";
+import purinaLogo from "@/public/logos/purina.png";
+import juniorLogo from "@/public/logos/junior.png";
+import trussLogo from "@/public/logos/truss.png";
+import kodifyLogo from "@/public/logos/kodify.png";
+import havaianasLogo from "@/public/logos/havaianas.png";
 
 const services = [
   {
@@ -33,6 +42,20 @@ const services = [
     img: "/Hero.jpg",
     position: "object-center",
   },
+];
+
+// Clients without a logo file fall back to their name in text.
+const clients = [
+  { name: "Puig", logo: puigLogo },
+  { name: "deel.com", logo: deelLogo },
+  { name: "Rituals", logo: null },
+  { name: "Preply", logo: preplyLogo },
+  { name: "Purina", logo: purinaLogo },
+  { name: "Junior.ai", logo: juniorLogo },
+  { name: "EBS Bartender School", logo: null },
+  { name: "Truss", logo: trussLogo },
+  { name: "Kodify", logo: kodifyLogo },
+  { name: "Havaianas", logo: havaianasLogo },
 ];
 
 const testimonials = [
@@ -93,6 +116,32 @@ export default function Home() {
             >
               Our Services
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Trusted by — client logos */}
+      <section className="py-12 px-6 border-b border-ink-border">
+        <div className="max-w-7xl mx-auto">
+          <p className="text-[11px] font-semibold text-muted tracking-[0.3em] uppercase mb-8 text-center">
+            Trusted By
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-8 items-center justify-items-center">
+            {clients.map((client) => (
+              <div key={client.name} className="flex h-10 items-center justify-center">
+                {client.logo ? (
+                  <Image
+                    src={client.logo}
+                    alt={client.name}
+                    className="max-h-full w-auto max-w-full md:max-w-[130px] object-contain mix-blend-multiply"
+                  />
+                ) : (
+                  <span className="text-[11px] font-semibold text-muted/70 tracking-[0.2em] uppercase text-center">
+                    {client.name}
+                  </span>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -241,33 +290,6 @@ export default function Home() {
                 <p className="text-[11px] text-muted tracking-wide mt-1">{t.role}</p>
               </div>
             ))}
-          </div>
-
-          <div className="mt-16 pt-12 border-t border-ink-border">
-            <p className="text-[11px] font-semibold text-muted tracking-[0.3em] uppercase mb-8 text-center">
-              Trusted By
-            </p>
-            <div className="grid grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-6 items-center justify-items-center">
-              {[
-                "Junior.ai",
-                "Puig",
-                "Preply",
-                "EBS Bartender School",
-                "Truss",
-                "Rituals",
-                "Kodify",
-                "Deel",
-                "Purina",
-                "Havanna",
-              ].map((name) => (
-                <div
-                  key={name}
-                  className="text-[11px] font-semibold text-muted/70 tracking-[0.2em] uppercase text-center"
-                >
-                  {name}
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
