@@ -6,8 +6,8 @@ const services = [
     title: "Corporate Offsites & Retreats",
     badge: "DMC Barcelona",
     desc: "From leadership summits to full-company retreats — we find the venue, handle the logistics and make it one they won't forget.",
-    img: "/gallery-outdoor.jpg",
-    position: "object-[center_60%]",
+    img: "/villa-rosa.jpg",
+    position: "object-center",
   },
   {
     n: "02",
