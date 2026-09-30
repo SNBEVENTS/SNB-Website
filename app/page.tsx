@@ -48,11 +48,9 @@ const services = [
 const clients = [
   { name: "Puig", logo: puigLogo },
   { name: "deel.com", logo: deelLogo },
-  { name: "Rituals", logo: null },
   { name: "Preply", logo: preplyLogo },
   { name: "Purina", logo: purinaLogo },
   { name: "Junior.ai", logo: juniorLogo },
-  { name: "EBS Bartender School", logo: null },
   { name: "Truss", logo: trussLogo },
   { name: "Kodify", logo: kodifyLogo },
   { name: "Havaianas", logo: havaianasLogo },
@@ -126,7 +124,7 @@ export default function Home() {
           <p className="text-[11px] font-semibold text-muted tracking-[0.3em] uppercase mb-8 text-center">
             Trusted By
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-8 items-center justify-items-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8 items-center justify-items-center">
             {clients.map((client) => (
               <div key={client.name} className="flex h-10 items-center justify-center">
                 {client.logo ? (
