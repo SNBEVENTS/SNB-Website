@@ -37,7 +37,7 @@ const services = [
 
 const clients = [
   "Puig",
-  "Deel",
+  "deel.com",
   "Rituals",
   "Preply",
   "Purina",
