@@ -65,7 +65,7 @@ const testimonials = [
     quote:
       "Mayke is an outstanding professional. She turned our biggest dreams into reality when it came to decoration. Her advice, follow-up, pricing, organization and communication were flawless. She and her team went beyond our expectations.",
     name: "Elisa",
-    role: null,
+    role: "HR Manager",
   },
   {
     quote:
