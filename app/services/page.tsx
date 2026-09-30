@@ -19,6 +19,23 @@ const services = [
   },
   {
     n: "02",
+    title: "Corporate & Company Events",
+    badge: null,
+    tagline: "From summer parties to end-of-year celebrations.",
+    description:
+      "Not every event needs to be a landmark moment — but every event deserves to be done well. We help local businesses and growing companies organise standout staff parties, summer socials, and end-of-year celebrations. Whether you're a team of 20 or 200, we handle the planning and logistics so you can show up and enjoy it.",
+    details: [
+      "Summer & seasonal parties",
+      "End-of-year celebrations",
+      "Company socials & away days",
+      "Local business events",
+    ],
+    image: "/Hero.jpg",
+    imagePosition: "object-center",
+  },
+
+  {
+    n: "03",
     title: "Team Building & Experiences",
     badge: null,
     tagline: "Invest in your people.",
@@ -34,7 +51,7 @@ const services = [
     imagePosition: "object-[center_55%]",
   },
   {
-    n: "03",
+    n: "04",
     title: "Brand Activations",
     badge: null,
     tagline: "Make the market take notice.",
@@ -48,22 +65,6 @@ const services = [
     ],
     image: "/brand-activation-fomo.jpg",
     imagePosition: "object-[center_55%]",
-  },
-  {
-    n: "04",
-    title: "Corporate & Company Events",
-    badge: null,
-    tagline: "From summer parties to end-of-year celebrations.",
-    description:
-      "Not every event needs to be a landmark moment — but every event deserves to be done well. We help local businesses and growing companies organise standout staff parties, summer socials, and end-of-year celebrations. Whether you're a team of 20 or 200, we handle the planning and logistics so you can show up and enjoy it.",
-    details: [
-      "Summer & seasonal parties",
-      "End-of-year celebrations",
-      "Company socials & away days",
-      "Local business events",
-    ],
-    image: "/Hero.jpg",
-    imagePosition: "object-center",
   },
 ];
 
