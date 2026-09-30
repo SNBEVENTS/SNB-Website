@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import puigLogo from "@/public/logos/puig.png";
 import deelLogo from "@/public/logos/deel.png";
-import preplyLogo from "@/public/logos/preply.webp";
+import preplyLogo from "@/public/logos/preply.png";
 import purinaLogo from "@/public/logos/purina.png";
 import juniorLogo from "@/public/logos/junior.png";
 import trussLogo from "@/public/logos/truss.png";
