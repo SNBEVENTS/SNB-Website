@@ -14,8 +14,8 @@ const services = [
       "Strategic planning offsites",
       "Board & executive retreats",
     ],
-    image: "/gallery-outdoor.jpg",
-    imagePosition: "object-[center_60%]",
+    image: "/villa-rosa.jpg",
+    imagePosition: "object-[center_35%]",
   },
   {
     n: "02",
