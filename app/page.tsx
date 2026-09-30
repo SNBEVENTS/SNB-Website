@@ -62,19 +62,22 @@ const clients = [
 
 const testimonials = [
   {
-    quote: "SNB made our annual offsite the best one yet. Every detail was handled — we just showed up.",
-    name: "Sarah K.",
-    role: "Head of People, Tech Company",
+    quote:
+      "Mayke is an outstanding professional. She turned our biggest dreams into reality when it came to decoration. Her advice, follow-up, pricing, organization and communication were flawless. She and her team went beyond our expectations.",
+    name: "Elisa",
+    role: null,
   },
   {
-    quote: "Fast, flexible and genuinely fun to work with. They completely got our brand from day one.",
-    name: "Marc L.",
-    role: "Brand Manager, Consumer Goods",
+    quote:
+      "They immediately understood the vision for the event and got to work straight away. Their knowledge of Barcelona and their extensive network of local vendors made the whole process incredibly smooth. No detail was overlooked.",
+    name: "Gemma Bryant",
+    role: "Office Manager, Junior.ai",
   },
   {
-    quote: "From first call to final event, everything was seamless. Our guests were blown away.",
-    name: "Emma T.",
-    role: "Events Lead, Financial Services",
+    quote:
+      "Everything looked beautiful and was delivered exactly as we had envisioned. The whole process was professional, seamless and very easy from start to finish. We were so happy with the final result and wouldn't hesitate to work again.",
+    name: "Carla Brothers",
+    role: "Founder, Purser Support",
   },
 ];
 
@@ -291,7 +294,9 @@ export default function Home() {
                   &ldquo;{t.quote}&rdquo;
                 </p>
                 <p className="text-sm font-semibold text-parchment">{t.name}</p>
-                <p className="text-[11px] text-muted tracking-wide mt-1">{t.role}</p>
+                {t.role && (
+                  <p className="text-[11px] text-muted tracking-wide mt-1">{t.role}</p>
+                )}
               </div>
             ))}
           </div>
