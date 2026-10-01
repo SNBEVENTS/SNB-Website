@@ -82,6 +82,22 @@ const testimonials = [
   },
 ];
 
+
+function CardShell({
+  href,
+  children,
+}: {
+  href: string | null;
+  children: React.ReactNode;
+}) {
+  if (!href) return <div className="group">{children}</div>;
+  return (
+    <Link href={href} className="group">
+      {children}
+    </Link>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -318,19 +334,19 @@ export default function Home() {
               <h2 className="font-heading text-3xl md:text-5xl text-parchment">Our Events</h2>
             </div>
             <Link
-              href="/services"
+              href="/portfolio"
               className="hidden md:inline text-[11px] font-semibold text-gold tracking-[0.25em] uppercase hover:text-gold-light transition-colors"
             >
-              All Services →
+              All Events →
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { src: "/gallery-outdoor.jpg", pos: "object-[center_60%]", cat: "COMPANY EVENT", title: "Summer Garden Party, Barcelona" },
-              { src: "/brand-activation.jpg", pos: "object-center", cat: "BRAND ACTIVATION", title: "Brand Activation, Barcelona" },
-              { src: "/team-building.jpg", pos: "object-top", cat: "TEAM BUILDING", title: "Activity Day, Ibiza" },
+              { src: "/portfolio/summer-garden-party/garden-lanterns.webp", pos: "object-[center_55%]", cat: "COMPANY EVENT", title: "Summer Garden Party, Barcelona", href: "/portfolio/summer-garden-party" },
+              { src: "/brand-activation.jpg", pos: "object-center", cat: "BRAND ACTIVATION", title: "Brand Activation, Barcelona", href: null },
+              { src: "/team-building.jpg", pos: "object-top", cat: "TEAM BUILDING", title: "Activity Day, Ibiza", href: null },
             ].map((item) => (
-              <div key={item.src} className="group cursor-pointer">
+              <CardShell key={item.src} href={item.href}>
                 <div className="overflow-hidden aspect-[3/4] mb-5">
                   <img
                     src={item.src}
@@ -342,7 +358,7 @@ export default function Home() {
                   {item.cat}
                 </p>
                 <p className="font-heading text-lg text-parchment">{item.title}</p>
-              </div>
+              </CardShell>
             ))}
           </div>
         </div>
