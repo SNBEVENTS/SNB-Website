@@ -5,6 +5,7 @@ import logo from "@/public/logo.png";
 const links = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
+  { label: "Work", href: "/#featured-work" },
 ];
 
 export default function Nav() {
