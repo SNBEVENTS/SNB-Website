@@ -342,7 +342,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { src: "/portfolio/preply-in-bloom/garden-lanterns.webp", pos: "object-[center_55%]", cat: "COMPANY EVENT", title: "Preply in Bloom, Barcelona", href: "/portfolio/preply-in-bloom" },
+              { src: "/portfolio/summer-garden-party/garden-lanterns.webp", pos: "object-[center_55%]", cat: "COMPANY EVENT", title: "Summer Garden Party, Barcelona", href: "/portfolio/summer-garden-party" },
               { src: "/brand-activation.jpg", pos: "object-center", cat: "BRAND ACTIVATION", title: "Brand Activation, Barcelona", href: null },
               { src: "/team-building.jpg", pos: "object-top", cat: "TEAM BUILDING", title: "Activity Day, Ibiza", href: null },
             ].map((item) => (
