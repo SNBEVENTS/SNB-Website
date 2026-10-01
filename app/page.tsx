@@ -367,7 +367,7 @@ export default function Home() {
           </h2>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 text-[11px] font-semibold text-surface tracking-[0.3em] uppercase border-b border-gold pb-1 hover:text-gold transition-colors"
+            className="inline-flex items-center gap-3 bg-gold px-8 py-4 text-[11px] font-semibold text-ink tracking-[0.3em] uppercase hover:bg-gold-light transition-colors"
           >
             Start a Conversation →
           </Link>
