@@ -123,6 +123,67 @@ export const cases: CaseStudy[] = [
       },
     ],
   },
+  {
+    slug: "hackathon-offsite-sitges",
+    title: "Four Days in Sitges",
+    client: "AI startup",
+    category: "Offsite",
+    activity: "4-Day Hackathon Offsite",
+    location: "Sitges",
+    guests: "50",
+    intro:
+      "A four-day hackathon offsite for 50 people in Sitges — villa, private chef, beach day, winery dinner and everything in between, run end to end.",
+    objectives: [
+      "Run four full days so the client's team could concentrate on the hackathon.",
+      "Break up heads-down work with things worth looking forward to.",
+      "Make it feel like Spain, not like a hotel conference floor.",
+    ],
+    description: [
+      "Fifty people came to Sitges for a four-day hackathon. Our brief was everything around the work: where they stayed, what they ate, what they did when they stopped, and making sure none of it landed on the client to organise.",
+      "The villa was the base. Guests arrived to a goodie bag, and from there the days were built around them — a private chef on site, yoga in the morning, games, and a salsa and sangria session in the afternoon.",
+      "One day moved to the beach, with branded kit laid out for the group and beach tennis on the sand. Another evening left the villa entirely for dinner at a winery, with flamenco dancers between courses.",
+      "A videographer stayed with the group across the four days, so the client finished the week with the footage as well as the event.",
+    ],
+    hero: {
+      src: "/portfolio/hackathon-offsite-sitges/willow-dinner.jpg",
+      alt: "A long table laid for dinner under a willow tree in the villa garden",
+      position: "object-[center_55%]",
+    },
+    gallery: [
+      {
+        src: "/portfolio/hackathon-offsite-sitges/beach-tennis.jpg",
+        alt: "The group on the sand holding beach tennis rackets after a match",
+      },
+      {
+        src: "/portfolio/hackathon-offsite-sitges/flamenco.jpg",
+        alt: "A flamenco dancer performing between the tables at the winery dinner",
+      },
+      {
+        src: "/portfolio/hackathon-offsite-sitges/winery-dinner.jpg",
+        alt: "Round tables set for dinner in the winery's stone-vaulted room",
+      },
+      {
+        src: "/portfolio/hackathon-offsite-sitges/villa-arrival.jpg",
+        alt: "The villa facade with classic cars parked under the arches",
+      },
+      {
+        src: "/portfolio/hackathon-offsite-sitges/pool-loungers.jpg",
+        alt: "Loungers and parasols set out around the villa pool",
+      },
+      {
+        src: "/portfolio/hackathon-offsite-sitges/sangria-bar.jpg",
+        alt: "A letterboard reading Classic and Cava Sangria on the garden bar",
+      },
+      {
+        src: "/portfolio/hackathon-offsite-sitges/garden-tables.jpg",
+        alt: "Tables set under the palms with festoon lights strung overhead",
+      },
+      {
+        src: "/portfolio/hackathon-offsite-sitges/villa-pool.jpg",
+        alt: "The villa pool surrounded by palms and planting",
+      },
+    ],
+  },
 ];
 
 export function getCase(slug: string) {

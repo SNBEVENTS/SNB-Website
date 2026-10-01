@@ -344,7 +344,7 @@ export default function Home() {
             {[
               { src: "/portfolio/summer-garden-party/garden-lanterns.webp", pos: "object-[center_55%]", cat: "COMPANY EVENT", title: "Summer Garden Party, Barcelona", href: "/portfolio/summer-garden-party" },
               { src: "/portfolio/vintage-summer-party/rose-wall.jpg", pos: "object-center", cat: "COMPANY EVENT", title: "The Owls' Villa, Can Magí", href: "/portfolio/vintage-summer-party" },
-              { src: "/team-building.jpg", pos: "object-top", cat: "TEAM BUILDING", title: "Activity Day, Ibiza", href: null },
+              { src: "/portfolio/hackathon-offsite-sitges/willow-dinner.jpg", pos: "object-[center_55%]", cat: "OFFSITE", title: "Four Days in Sitges", href: "/portfolio/hackathon-offsite-sitges" },
             ].map((item) => (
               <CardShell key={item.src} href={item.href}>
                 <div className="overflow-hidden aspect-[3/4] mb-5">
