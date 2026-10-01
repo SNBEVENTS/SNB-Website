@@ -127,7 +127,7 @@ export const cases: CaseStudy[] = [
   {
     slug: "hackathon-offsite-sitges",
     title: "Four Days in Sitges",
-    client: "AI startup",
+    client: "Junior.ai",
     category: "Offsite",
     activity: "4-Day Hackathon Offsite",
     location: "Sitges",
@@ -135,21 +135,21 @@ export const cases: CaseStudy[] = [
     intro:
       "A four-day hackathon offsite for 50 people in Sitges — villa, private chef, beach day, winery dinner and everything in between, run end to end.",
     objectives: [
-      "Run four full days so the client's team could concentrate on the hackathon.",
+      "Run four full days so their team could concentrate on the hackathon.",
       "Break up heads-down work with things worth looking forward to.",
       "Make it feel like Spain, not like a hotel conference floor.",
     ],
     description: [
-      "Fifty people came to Sitges for a four-day hackathon. Our brief was everything around the work: where they stayed, what they ate, what they did when they stopped, and making sure none of it landed on the client to organise.",
+      "Junior.ai brought fifty people to Sitges for a four-day hackathon. Our brief was everything around the work: where they stayed, what they ate, what they did when they stopped, and making sure none of it landed on their team to organise.",
       "The villa was the base. Guests arrived to a goodie bag, and from there the days were built around them — a private chef on site, yoga in the morning, games, and a salsa and sangria session in the afternoon.",
       "One day moved to the beach, with branded kit laid out for the group and beach tennis on the sand. Another evening left the villa entirely for dinner at a winery, with flamenco dancers between courses.",
-      "A videographer stayed with the group across the four days, so the client finished the week with the footage as well as the event.",
+      "A videographer stayed with the group across the four days, so they finished the week with the footage as well as the event.",
     ],
     testimonial: {
       quote:
         "They immediately understood the vision for the event and got to work straight away. Their knowledge of Barcelona and their extensive network of local vendors made the whole process incredibly smooth. As with most large events, there were plenty of last-minute changes and moving parts, but Babet took everything in her stride.",
       name: "Gemma Bryant",
-      role: "Office Manager",
+      role: "Office Manager, Junior.ai",
     },
     hero: {
       src: "/portfolio/hackathon-offsite-sitges/willow-dinner.jpg",
