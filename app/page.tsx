@@ -308,7 +308,7 @@ export default function Home() {
       </section>
 
       {/* Featured work */}
-      <section id="featured-work" className="scroll-mt-36 py-24 md:py-32 px-6">
+      <section id="portfolio" className="scroll-mt-36 py-24 md:py-32 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-end justify-between mb-14">
             <div>

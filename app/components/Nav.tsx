@@ -9,7 +9,7 @@ import logo from "@/public/logo.png";
 const links = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "Portfolio", href: "/#featured-work" },
+  { label: "Portfolio", href: "/#portfolio" },
 ];
 
 export default function Nav() {
