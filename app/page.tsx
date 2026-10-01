@@ -97,8 +97,8 @@ export default function Home() {
           <div className="absolute inset-0 bg-ink/60" />
         </div>
         <div className="max-w-7xl mx-auto w-full relative z-10">
-          <p className="text-[11px] font-semibold text-gold-light tracking-[0.4em] uppercase mb-6">
-            Barcelona · Ibiza · All of Spain
+          <p className="text-[11px] font-semibold text-gold-light tracking-[0.3em] md:tracking-[0.4em] uppercase mb-6">
+            Corporate Event Agency in Barcelona · Events Across Spain
           </p>
           <h1 className="font-heading text-[clamp(3rem,8vw,7.5rem)] text-surface leading-[0.95] tracking-tight mb-8">
             Your Event.<br />
