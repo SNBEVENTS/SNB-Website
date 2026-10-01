@@ -127,7 +127,7 @@ export default function Home() {
       </section>
 
       {/* What We Do — photo cards */}
-      <section className="py-24 px-6">
+      <section className="pt-12 pb-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
             <p className="text-[11px] font-semibold text-muted tracking-[0.3em] uppercase mb-4">
