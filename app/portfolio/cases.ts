@@ -12,6 +12,7 @@ export type CaseStudy = {
   objectives: string[];
   /** The narrative, one paragraph per entry. */
   description: string[];
+  testimonial?: { quote: string; name: string; role: string };
   hero: { src: string; alt: string; position?: string };
   gallery: { src: string; alt: string }[];
 };
@@ -144,6 +145,12 @@ export const cases: CaseStudy[] = [
       "One day moved to the beach, with branded kit laid out for the group and beach tennis on the sand. Another evening left the villa entirely for dinner at a winery, with flamenco dancers between courses.",
       "A videographer stayed with the group across the four days, so the client finished the week with the footage as well as the event.",
     ],
+    testimonial: {
+      quote:
+        "They immediately understood the vision for the event and got to work straight away. Their knowledge of Barcelona and their extensive network of local vendors made the whole process incredibly smooth. As with most large events, there were plenty of last-minute changes and moving parts, but Babet took everything in her stride.",
+      name: "Gemma Bryant",
+      role: "Office Manager",
+    },
     hero: {
       src: "/portfolio/hackathon-offsite-sitges/willow-dinner.jpg",
       alt: "A long table laid for dinner under a willow tree in the villa garden",

@@ -118,6 +118,23 @@ export default async function CaseStudyPage({
         </div>
       </section>
 
+      {/* Client quote */}
+      {study.testimonial && (
+        <section className="pb-16 md:pb-24 px-6">
+          <figure className="max-w-7xl mx-auto border-t border-ink-border pt-12">
+            <blockquote className="font-heading text-xl md:text-3xl text-parchment italic leading-relaxed max-w-4xl">
+              &ldquo;{study.testimonial.quote}&rdquo;
+            </blockquote>
+            <figcaption className="mt-8">
+              <p className="text-sm font-semibold text-parchment">{study.testimonial.name}</p>
+              <p className="text-[11px] text-muted tracking-wide mt-1">
+                {study.testimonial.role}
+              </p>
+            </figcaption>
+          </figure>
+        </section>
+      )}
+
       {/* Gallery */}
       <section className="pb-16 md:pb-24 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
