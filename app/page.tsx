@@ -313,7 +313,7 @@ export default function Home() {
           <div className="flex items-end justify-between mb-14">
             <div>
               <p className="text-[11px] font-semibold text-muted tracking-[0.3em] uppercase mb-4">
-                Featured Work
+                Portfolio
               </p>
               <h2 className="font-heading text-3xl md:text-5xl text-parchment">Our Events</h2>
             </div>
