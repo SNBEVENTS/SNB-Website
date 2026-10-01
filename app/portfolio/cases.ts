@@ -152,9 +152,9 @@ export const cases: CaseStudy[] = [
       role: "Office Manager, Junior.ai",
     },
     hero: {
-      src: "/portfolio/hackathon-offsite-sitges/willow-dinner.jpg",
-      alt: "A long table laid for dinner under a willow tree in the villa garden",
-      position: "object-[center_55%]",
+      src: "/portfolio/hackathon-offsite-sitges/pool-loungers.jpg",
+      alt: "Loungers and white parasols set out around the villa pool",
+      position: "object-[center_80%]",
     },
     gallery: [
       {
@@ -174,8 +174,8 @@ export const cases: CaseStudy[] = [
         alt: "The villa facade with classic cars parked under the arches",
       },
       {
-        src: "/portfolio/hackathon-offsite-sitges/pool-loungers.jpg",
-        alt: "Loungers and parasols set out around the villa pool",
+        src: "/portfolio/hackathon-offsite-sitges/willow-dinner.jpg",
+        alt: "A long table laid for dinner under a willow tree in the villa garden",
       },
       {
         src: "/portfolio/hackathon-offsite-sitges/sangria-bar.jpg",
