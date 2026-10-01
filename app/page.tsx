@@ -87,7 +87,7 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="min-h-screen flex items-end pb-20 md:pb-28 px-6 relative overflow-hidden">
-        <div className="absolute inset-x-0 top-0 bottom-14 md:bottom-28 z-0">
+        <div className="absolute inset-x-0 top-0 bottom-14 md:bottom-[88px] z-0">
           <img
             src="/Hero.jpg"
             alt=""
@@ -112,7 +112,7 @@ export default function Home() {
           <div className="flex flex-wrap items-center gap-8 md:gap-12">
             <Link
               href="/contact"
-              className="text-[11px] font-semibold text-surface tracking-[0.3em] uppercase border-b border-gold pb-1 hover:text-gold transition-colors"
+              className="inline-flex items-center gap-3 bg-gold px-8 py-4 text-[11px] font-semibold text-ink tracking-[0.3em] uppercase hover:bg-gold-light transition-colors"
             >
               Start a Conversation →
             </Link>
