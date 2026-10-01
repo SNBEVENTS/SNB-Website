@@ -218,7 +218,7 @@ export default function Home() {
       </div>
 
       {/* Why SNB — with team photo */}
-      <section className="py-24 md:py-32 px-6">
+      <section className="pt-24 md:pt-32 pb-16 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center">
           <div className="overflow-hidden">
             <img
@@ -279,7 +279,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials + logos */}
-      <section className="py-24 md:py-32 px-6 bg-ink-raised">
+      <section className="pt-16 pb-24 md:pb-32 px-6 bg-ink-raised">
         <div className="max-w-7xl mx-auto">
           <div className="mb-14">
             <p className="text-[11px] font-semibold text-muted tracking-[0.3em] uppercase mb-4">
