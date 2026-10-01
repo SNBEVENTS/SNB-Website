@@ -70,6 +70,59 @@ export const cases: CaseStudy[] = [
       },
     ],
   },
+  {
+    slug: "vintage-summer-party",
+    title: "The Owls' Villa",
+    client: "International tech company",
+    category: "Company Event",
+    activity: "Summer Party",
+    location: "Can Magí, Barcelona",
+    guests: "180",
+    intro:
+      "A vintage-themed summer party for 180 employees at Can Magí, outside Barcelona — cocktails in the garden, dinner under the trees, and the party indoors after dark.",
+    objectives: [
+      "Give 180 colleagues one evening together, away from the office.",
+      "Put the brand into the venue properly, not just on a welcome sign.",
+      "Move the night through three settings so it never sat still.",
+    ],
+    description: [
+      "Our client wanted a summer party for 180 people with a vintage theme, at Can Magí, a masia just outside Barcelona. One evening, one place, and a brand that had to be present without turning the night into a conference.",
+      "So we built the branding into the setting. Their mark went up as a wall of red roses against the hedge, as a cut-out on the garden bar, and on illuminated cubes carrying their own lines. Guests arrived at a welcome station stocked with straw hats, paper parasols and sunglasses for the heat.",
+      "The vintage theme ran through the furniture and the detail: a photo corner built around a green velvet sofa, a gramophone, a typewriter, stacked suitcases, vinyl and layered rugs. Chesterfields and low tables sat out on the lawn with deep red florals and candles.",
+      "The evening moved in three acts. Cocktails in the garden while the sun was still up, then dinner outdoors on long banquet tables dressed in white linen, burgundy napkins and red anthuriums, and then indoors for the party once it was dark.",
+    ],
+    hero: {
+      src: "/portfolio/vintage-summer-party/dinner-tables.jpg",
+      alt: "Long outdoor banquet tables in white linen with burgundy napkins and red anthuriums, set on the lawn",
+      position: "object-[center_60%]",
+    },
+    gallery: [
+      {
+        src: "/portfolio/vintage-summer-party/rose-wall.jpg",
+        alt: "The client's mark built as a wall of red roses against a green hedge",
+      },
+      {
+        src: "/portfolio/vintage-summer-party/welcome-station.jpg",
+        alt: "Welcome station with straw hats, paper parasols and a branded arrival sign",
+      },
+      {
+        src: "/portfolio/vintage-summer-party/vintage-corner.jpg",
+        alt: "Vintage photo corner with a green velvet sofa, gramophone, typewriter and layered rugs",
+      },
+      {
+        src: "/portfolio/vintage-summer-party/garden-bar.jpg",
+        alt: "The garden bar in wood with the brand mark on the front and glassware set out",
+      },
+      {
+        src: "/portfolio/vintage-summer-party/garden-lounge.jpg",
+        alt: "Garden lounge seating with deep red florals and candles on a low wooden table",
+      },
+      {
+        src: "/portfolio/vintage-summer-party/lightboxes.jpg",
+        alt: "Illuminated cubes carrying the brand mark and slogans in the indoor party space",
+      },
+    ],
+  },
 ];
 
 export function getCase(slug: string) {
