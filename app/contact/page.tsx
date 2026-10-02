@@ -1,6 +1,7 @@
 import ContactForm from "./ContactForm";
 import Image from "next/image";
 import Link from "next/link";
+import InstagramIcon from "../components/InstagramIcon";
 import logo from "@/public/logo.png";
 
 export default function Contact() {
@@ -62,6 +63,21 @@ export default function Contact() {
                 className="text-surface hover:text-gold transition-colors"
               >
                 +34 936 096 253
+              </a>
+            </div>
+
+            <div>
+              <p className="text-[11px] font-semibold text-gold tracking-[0.3em] uppercase mb-3">
+                Instagram
+              </p>
+              <a
+                href="https://www.instagram.com/snbeventsagency/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2.5 text-surface hover:text-gold transition-colors"
+              >
+                <InstagramIcon className="w-5 h-5" />
+                @snbeventsagency
               </a>
             </div>
 

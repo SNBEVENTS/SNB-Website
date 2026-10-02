@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/public/logo.png";
+import InstagramIcon from "./InstagramIcon";
 
 export default function Footer() {
   return (
@@ -69,6 +70,17 @@ export default function Footer() {
                   className="hover:text-parchment transition-colors"
                 >
                   info@strawsnberries.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/snbeventsagency/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 hover:text-parchment transition-colors"
+                >
+                  <InstagramIcon className="w-4 h-4" />
+                  Instagram
                 </a>
               </li>
             </ul>
