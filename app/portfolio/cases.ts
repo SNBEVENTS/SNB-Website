@@ -252,6 +252,47 @@ export const cases: CaseStudy[] = [
       },
     ],
   },
+  {
+    slug: "haircare-product-launch",
+    title: "Beauty Product Launch",
+    client: "Truss Professional",
+    category: "Product Launch",
+    activity: "Product Presentation",
+    location: "Barcelona",
+    guests: "30",
+    intro:
+      "An intimate product launch for thirty hair stylists in Barcelona — a beautiful room dressed around a new Truss Professional range, in the brand's own blue and white.",
+    objectives: [
+      "Put a new range in front of the stylists who would go on to sell it.",
+      "Dress a room that was already beautiful without competing with it.",
+      "Keep the product the thing people looked at, at every height.",
+    ],
+    description: [
+      "Truss Professional was launching a new range and wanted the people who matter most to see it first: thirty stylists, in one room, in Barcelona.",
+      "The space came with its own character — whitewashed stone, soft arches, warm floors — so the job was to dress it rather than cover it. We uplit the stone, kept the palette to the brand's blue and white, and ran candlelight the length of the tables.",
+      "Product sat on white plinths at three heights, so the range read as a set from across the room and in detail up close. Florals in blue roses, hydrangea and delphinium picked up the packaging and tied the displays to the tables.",
+      "Every place was set with product, printed material and a name card, so the stylists could handle the range as the presentation ran rather than watch it from a distance.",
+    ],
+    hero: {
+      src: "/portfolio/haircare-product-launch/room.jpg",
+      alt: "The dressed room: a lit product plinth against whitewashed stone, with florals and candles along the table",
+      position: "object-center",
+    },
+    gallery: [
+      {
+        src: "/portfolio/haircare-product-launch/plinths.jpg",
+        alt: "Three white product plinths at stepped heights, dressed with florals and candles",
+      },
+      {
+        src: "/portfolio/haircare-product-launch/florals.jpg",
+        alt: "A blue and white floral arrangement beside candles and product on the table",
+      },
+      {
+        src: "/portfolio/haircare-product-launch/place-setting.jpg",
+        alt: "A place setting being laid with product, printed material and a name card",
+      },
+    ],
+  },
 ];
 
 export function getCase(slug: string) {
