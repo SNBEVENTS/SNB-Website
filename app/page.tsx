@@ -211,12 +211,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Full-bleed photo */}
-      <div className="w-full h-[55vh] md:h-[70vh] overflow-hidden">
-        <img
-          src="/gallery-outdoor.jpg"
-          alt="SNB Events Agency outdoor event setup"
-          className="w-full h-full object-cover object-[center_60%]"
+      {/* Full-bleed video */}
+      <div className="w-full aspect-video max-h-[70vh] overflow-hidden">
+        <video
+          src="/event-reel.mp4"
+          poster="/gallery-outdoor.jpg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          aria-hidden="true"
+          className="w-full h-full object-cover object-center scale-[1.02]"
         />
       </div>
 
