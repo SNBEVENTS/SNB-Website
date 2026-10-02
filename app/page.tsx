@@ -343,7 +343,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { src: "/portfolio/summer-garden-party/garden-lanterns.webp", pos: "object-[center_55%]", cat: "COMPANY EVENT", title: "Summer Garden Party, Barcelona", href: "/portfolio/summer-garden-party" },
-              { src: "/portfolio/vintage-summer-party/rose-wall.jpg", pos: "object-center", cat: "COMPANY EVENT", title: "The Owls' Villa, Can Magí", href: "/portfolio/vintage-summer-party" },
+              { src: "/portfolio/fomo-hotel-takeover/hotel-entrance.jpg", pos: "object-center", cat: "BRAND ACTIVATION", title: "FOMO Hotel, Barcelona", href: "/portfolio/fomo-hotel-takeover" },
               { src: "/portfolio/hackathon-offsite-sitges/pool-loungers.jpg", pos: "object-[center_80%]", cat: "OFFSITE", title: "Four Days in Sitges", href: "/portfolio/hackathon-offsite-sitges" },
             ].map((item) => (
               <CardShell key={item.src} href={item.href}>
