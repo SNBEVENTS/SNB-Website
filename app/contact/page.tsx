@@ -67,6 +67,20 @@ export default function Contact() {
 
             <div>
               <p className="text-[11px] font-semibold text-gold tracking-[0.3em] uppercase mb-3">
+                Instagram
+              </p>
+              <a
+                href="https://www.instagram.com/snbeventsagency/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-surface hover:text-gold transition-colors"
+              >
+                @snbeventsagency
+              </a>
+            </div>
+
+            <div>
+              <p className="text-[11px] font-semibold text-gold tracking-[0.3em] uppercase mb-3">
                 Based In
               </p>
               <p className="text-surface/70">Barcelona, Spain</p>

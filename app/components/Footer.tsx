@@ -71,6 +71,16 @@ export default function Footer() {
                   info@strawsnberries.com
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/snbeventsagency/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-parchment transition-colors"
+                >
+                  Instagram
+                </a>
+              </li>
             </ul>
           </div>
         </div>
