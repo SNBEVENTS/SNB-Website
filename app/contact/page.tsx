@@ -1,6 +1,7 @@
 import ContactForm from "./ContactForm";
 import Image from "next/image";
 import Link from "next/link";
+import InstagramIcon from "../components/InstagramIcon";
 import logo from "@/public/logo.png";
 
 export default function Contact() {
@@ -73,8 +74,9 @@ export default function Contact() {
                 href="https://www.instagram.com/snbeventsagency/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-surface hover:text-gold transition-colors"
+                className="inline-flex items-center gap-2.5 text-surface hover:text-gold transition-colors"
               >
+                <InstagramIcon className="w-5 h-5" />
                 @snbeventsagency
               </a>
             </div>
