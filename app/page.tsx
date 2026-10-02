@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { cases } from "./portfolio/cases";
 import Image from "next/image";
 import puigLogo from "@/public/logos/puig.png";
 import deelLogo from "@/public/logos/deel.png";
@@ -83,20 +84,6 @@ const testimonials = [
 ];
 
 
-function CardShell({
-  href,
-  children,
-}: {
-  href: string | null;
-  children: React.ReactNode;
-}) {
-  if (!href) return <div className="group">{children}</div>;
-  return (
-    <Link href={href} className="group">
-      {children}
-    </Link>
-  );
-}
 
 export default function Home() {
   return (
@@ -340,25 +327,23 @@ export default function Home() {
               All Events →
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { src: "/portfolio/summer-garden-party/garden-lanterns.webp", pos: "object-[center_55%]", cat: "COMPANY EVENT", title: "Summer Garden Party, Barcelona", href: "/portfolio/summer-garden-party" },
-              { src: "/portfolio/vintage-summer-party/rose-wall.jpg", pos: "object-center", cat: "COMPANY EVENT", title: "The Owls' Villa, Can Magí", href: "/portfolio/vintage-summer-party" },
-              { src: "/portfolio/hackathon-offsite-sitges/pool-loungers.jpg", pos: "object-[center_80%]", cat: "OFFSITE", title: "Four Days in Sitges", href: "/portfolio/hackathon-offsite-sitges" },
-            ].map((item) => (
-              <CardShell key={item.src} href={item.href}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {cases.map((study) => (
+              <Link key={study.slug} href={`/portfolio/${study.slug}`} className="group">
                 <div className="overflow-hidden aspect-[3/4] mb-5">
                   <img
-                    src={item.src}
-                    alt={item.title}
-                    className={`w-full h-full object-cover ${item.pos} group-hover:scale-105 transition-transform duration-700`}
+                    src={study.hero.src}
+                    alt={study.hero.alt}
+                    className={`w-full h-full object-cover ${
+                      study.hero.position ?? "object-center"
+                    } group-hover:scale-105 transition-transform duration-700`}
                   />
                 </div>
                 <p className="text-[10px] font-semibold text-gold tracking-[0.3em] uppercase mb-1.5">
-                  {item.cat}
+                  {study.category} · {study.location}
                 </p>
-                <p className="font-heading text-lg text-parchment">{item.title}</p>
-              </CardShell>
+                <p className="font-heading text-lg text-parchment">{study.title}</p>
+              </Link>
             ))}
           </div>
         </div>
