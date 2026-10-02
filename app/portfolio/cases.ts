@@ -254,7 +254,7 @@ export const cases: CaseStudy[] = [
   },
   {
     slug: "haircare-product-launch",
-    title: "The Deluxe Prime Launch",
+    title: "Beauty Product Launch",
     client: "Truss Professional",
     category: "Product Launch",
     activity: "Product Presentation",
