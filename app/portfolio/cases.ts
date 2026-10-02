@@ -191,6 +191,67 @@ export const cases: CaseStudy[] = [
       },
     ],
   },
+  {
+    slug: "fomo-hotel-takeover",
+    title: "FOMO Hotel",
+    client: "FOMO",
+    category: "Brand Activation",
+    activity: "4-Day Hotel Takeover",
+    location: "Barcelona",
+    guests: "50-100 a night",
+    intro:
+      "A four-day takeover of a 30-room boutique hotel during Barcelona's gaming fair: branded end to end, staffed by us, and a different event every night.",
+    objectives: [
+      "Turn a hotel into the client's own venue for the length of the fair.",
+      "Give their customers a reason to come back each night, not just to the stand.",
+      "Keep the team's days running so they could work the fair itself.",
+    ],
+    description: [
+      "FOMO came to Barcelona for the gaming fair and took a 30-room boutique hotel for four days. Their team slept there, and every evening it became a venue for their customers, who were at the fair too.",
+      "We branded the hotel throughout, from the neon over the door to the letters in the lobby and the signage upstairs, and put our own staff on reception in their colours. Guests arrived into the brand rather than into a hotel lobby.",
+      "The days were logistics: transport to the fair and back, timed around the exhibition schedule, so the team could work rather than organise.",
+      "The nights were three different events. A casino games night. A party night for a hundred people with headline DJs. And an Arabian night with belly dancers and shisha. Around fifty guests on the quieter evenings, a full house for the party.",
+    ],
+    hero: {
+      src: "/portfolio/fomo-hotel-takeover/hotel-entrance.jpg",
+      alt: "The hotel entrance at night under a neon FOMO Hotel sign",
+      position: "object-[center_55%]",
+    },
+    gallery: [
+      {
+        src: "/portfolio/fomo-hotel-takeover/rooftop-letters.jpg",
+        alt: "Illuminated brand letters beside the rooftop pool with the city lit up behind",
+      },
+      {
+        src: "/portfolio/fomo-hotel-takeover/dj.jpg",
+        alt: "A DJ playing under pink light on the party night",
+      },
+      {
+        src: "/portfolio/fomo-hotel-takeover/casino-night.jpg",
+        alt: "Guests playing cards at the casino games night",
+      },
+      {
+        src: "/portfolio/fomo-hotel-takeover/ice-luge.jpg",
+        alt: "A drink poured through a branded ice luge lit in pink",
+      },
+      {
+        src: "/portfolio/fomo-hotel-takeover/balloons.jpg",
+        alt: "Oversized branded balloons lit from within on the party floor",
+      },
+      {
+        src: "/portfolio/fomo-hotel-takeover/cube-sign.jpg",
+        alt: "Illuminated brand cubes rigged above the party space",
+      },
+      {
+        src: "/portfolio/fomo-hotel-takeover/lobby-letters.webp",
+        alt: "Freestanding light-up brand letters in the hotel lobby",
+      },
+      {
+        src: "/portfolio/fomo-hotel-takeover/card-games.jpg",
+        alt: "A branded card game set out on a cocktail table",
+      },
+    ],
+  },
 ];
 
 export function getCase(slug: string) {
