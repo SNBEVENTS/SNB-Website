@@ -293,6 +293,51 @@ export const cases: CaseStudy[] = [
       },
     ],
   },
+  {
+    slug: "berry-connected-networking",
+    title: "Berry Connected",
+    client: "Our own event",
+    category: "Networking Event",
+    activity: "Networking Evening",
+    location: "Doppietta, Barcelona",
+    guests: "80",
+    intro:
+      "Berry Connected is our own networking evening. Eighty guests at Doppietta, an Italian restaurant in Barcelona — grazing food, a pink welcome drink, speakers and something to make with your hands.",
+    objectives: [
+      "Give eighty people who mostly did not know each other a reason to talk.",
+      "Keep the room moving rather than seating everyone at a table plan.",
+      "Make it feel like an evening out, not a conference with canapés.",
+    ],
+    description: [
+      "Berry Connected is our own event: we host it and we produce it. Eighty guests, one evening, at Doppietta — an Italian restaurant in Barcelona with enough character that it does half the work before anyone arrives.",
+      "Guests were met with a pink welcome drink and a goodie bag, and the food ran as grazing tables through the evening rather than a seated dinner. Nobody was pinned to a chair, so people kept circulating and the room stayed loud.",
+      "Speakers took a short slot in the middle, and a ceramic workshop ran alongside it: guests built their own coasters from loose ceramic pieces. It gave people something to do with their hands and, more usefully, something to talk to a stranger about.",
+      "An ice cream cart rounded the evening off.",
+    ],
+    hero: {
+      src: "/portfolio/berry-connected-networking/grazing-table.jpg",
+      alt: "Guests gathered around the grazing table in the restaurant, plates in hand",
+      position: "object-[center_45%]",
+    },
+    gallery: [
+      {
+        src: "/portfolio/berry-connected-networking/speaker.jpg",
+        alt: "A speaker addressing the room, with the guests' goodie bags lined up behind her",
+      },
+      {
+        src: "/portfolio/berry-connected-networking/gelato-cart.jpg",
+        alt: "An ice cream cart set up in the restaurant under a neon sign",
+      },
+      {
+        src: "/portfolio/berry-connected-networking/guests-food.jpg",
+        alt: "Two guests with plates from the grazing table on the terrace",
+      },
+      {
+        src: "/portfolio/berry-connected-networking/guests-talking.jpg",
+        alt: "Guests talking over drinks against the restaurant's poster wall",
+      },
+    ],
+  },
 ];
 
 export function getCase(slug: string) {
