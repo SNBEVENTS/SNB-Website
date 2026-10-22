@@ -15,6 +15,8 @@ const inputClass =
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [form, setForm] = useState({
     name: "",
     company: "",
@@ -30,9 +32,33 @@ export default function ContactForm() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setSubmitted(true);
+    setSending(true);
+    setError(null);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => null);
+        throw new Error(data?.error ?? "Something went wrong.");
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError(
+        err instanceof Error && err.message
+          ? err.message
+          : "Something went wrong."
+      );
+    } finally {
+      setSending(false);
+    }
   }
 
   if (submitted) {
@@ -149,11 +175,22 @@ export default function ContactForm() {
         />
       </div>
 
+      {error && (
+        <p className="text-sm text-white border border-white/40 bg-white/10 px-4 py-3">
+          {error} Please email us directly at{" "}
+          <a href="mailto:info@strawsnberries.com" className="underline">
+            info@strawsnberries.com
+          </a>
+          .
+        </p>
+      )}
+
       <button
         type="submit"
-        className="inline-flex items-center gap-3 bg-surface text-[#8c3e26] px-9 py-4 text-[11px] font-semibold tracking-[0.25em] uppercase hover:opacity-90 transition-opacity"
+        disabled={sending}
+        className="inline-flex items-center gap-3 bg-surface text-[#8c3e26] px-9 py-4 text-[11px] font-semibold tracking-[0.25em] uppercase hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        Send Enquiry →
+        {sending ? "Sending…" : "Send Enquiry →"}
       </button>
     </form>
   );
