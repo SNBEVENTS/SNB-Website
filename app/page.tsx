@@ -89,9 +89,16 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
+      {/*
+        The hero text is bottom-aligned, so on a short window it used to ride up
+        behind the fixed bar — at 1280x720 the gold eyebrow landed on the same
+        line as the nav links. pt-44 (176px) reserves the bar's 137px plus
+        clearance, so the text can never reach it. On taller windows the text
+        still sits at the bottom and nothing moves.
+      */}
       <section
         data-hero
-        className="min-h-screen flex items-end pb-20 md:pb-28 px-6 relative overflow-hidden"
+        className="min-h-screen flex items-end pt-44 pb-20 md:pb-28 px-6 relative overflow-hidden"
       >
         <div className="absolute inset-x-0 top-0 bottom-14 md:bottom-[88px] z-0">
           <video
