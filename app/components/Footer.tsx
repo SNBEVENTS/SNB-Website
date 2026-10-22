@@ -91,7 +91,7 @@ export default function Footer() {
 
         <div className="border-t border-ink-border pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <p className="text-xs text-muted">
-            © 2023 SNB Events Agency. All rights reserved.
+            © 2023–2026 SNB Events Agency. All rights reserved.
           </p>
           <p className="text-[10px] text-muted tracking-[0.25em] uppercase">
             Corporate Events · Barcelona & All of Spain
