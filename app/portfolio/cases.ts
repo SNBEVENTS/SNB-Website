@@ -20,7 +20,7 @@ export type CaseStudy = {
 export const cases: CaseStudy[] = [
   {
     slug: "summer-garden-party",
-    title: "Company Event In Bloom",
+    title: "Company Event — In Bloom",
     client: "International tech company",
     category: "Company Event",
     activity: "Summer Garden Party",
@@ -73,7 +73,7 @@ export const cases: CaseStudy[] = [
   },
   {
     slug: "vintage-summer-party",
-    title: "Company Event The Owls' Villa",
+    title: "Company Event — The Owls' Villa",
     client: "International tech company",
     category: "Company Event",
     activity: "Summer Party",
@@ -126,7 +126,7 @@ export const cases: CaseStudy[] = [
   },
   {
     slug: "hackathon-offsite-sitges",
-    title: "Offsite Four Days in Sitges",
+    title: "Offsite — Four Days in Sitges",
     client: "Junior.ai",
     category: "Offsite",
     activity: "4-Day Hackathon Offsite",
@@ -193,7 +193,7 @@ export const cases: CaseStudy[] = [
   },
   {
     slug: "fomo-hotel-takeover",
-    title: "Brand Activation FOMO Hotel",
+    title: "Brand Activation — FOMO Hotel",
     client: "FOMO",
     category: "Brand Activation",
     activity: "4-Day Hotel Takeover",
@@ -295,7 +295,7 @@ export const cases: CaseStudy[] = [
   },
   {
     slug: "berry-connected-networking",
-    title: "Networking Event Berry Connected",
+    title: "Networking Event — Berry Connected",
     client: "Our own event",
     category: "Networking Event",
     activity: "Networking Evening",
