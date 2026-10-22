@@ -56,7 +56,7 @@ export default async function CaseStudyPage({
             ← Portfolio
           </Link>
           <p className="text-[11px] font-semibold text-gold tracking-[0.3em] uppercase mt-8 mb-4">
-            {study.category}
+            {study.location}
           </p>
           <h1 className="font-heading text-4xl md:text-6xl text-parchment leading-[1.05] tracking-tight mb-6">
             {study.title}

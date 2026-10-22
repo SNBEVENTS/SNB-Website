@@ -40,7 +40,7 @@ export default function PortfolioPage() {
                 />
               </div>
               <p className="text-[10px] font-semibold text-gold tracking-[0.3em] uppercase mb-2">
-                {study.category} · {study.location}
+                {study.location}
               </p>
               <h2 className="font-heading text-2xl text-parchment mb-3 group-hover:text-gold transition-colors">
                 {study.title}
