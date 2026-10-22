@@ -89,7 +89,10 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="min-h-screen flex items-end pb-20 md:pb-28 px-6 relative overflow-hidden">
+      <section
+        data-hero
+        className="min-h-screen flex items-end pb-20 md:pb-28 px-6 relative overflow-hidden"
+      >
         <div className="absolute inset-x-0 top-0 bottom-14 md:bottom-[88px] z-0">
           <video
             src="/video.mov"
