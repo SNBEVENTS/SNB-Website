@@ -1,4 +1,5 @@
 import Link from "next/link";
+import HeroMedia from "./HeroMedia";
 
 const services = [
   {
@@ -73,12 +74,7 @@ export default function Services() {
     <>
       {/* Hero — video background */}
       <section className="relative min-h-screen flex items-end overflow-hidden">
-        <img
-          src="/gallery-outdoor.jpg"
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover object-[center_60%]"
-        />
+        <HeroMedia />
         <div className="absolute inset-0 bg-ink/55" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 pb-20 md:pb-28 w-full">
           <p className="text-[11px] font-semibold text-surface/60 tracking-[0.3em] uppercase mb-8">
