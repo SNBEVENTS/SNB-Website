@@ -65,12 +65,6 @@ const clients = [
 const testimonials = [
   {
     quote:
-      "Mayke is an outstanding professional. She turned our biggest dreams into reality when it came to decoration. Her advice, follow-up, pricing, organization and communication were flawless. She and her team went beyond our expectations.",
-    name: "Elisa",
-    role: "HR Manager",
-  },
-  {
-    quote:
       "They immediately understood the vision for the event and got to work straight away. Their knowledge of Barcelona and their extensive network of local vendors made the whole process incredibly smooth. No detail was overlooked.",
     name: "Gemma Bryant",
     role: "Office Manager, Junior.ai",
@@ -80,6 +74,12 @@ const testimonials = [
       "Everything looked beautiful and was delivered exactly as we had envisioned. The whole process was professional, seamless and very easy from start to finish. We were so happy with the final result and wouldn't hesitate to work again.",
     name: "Carla Brothers",
     role: "Founder, Purser Support",
+  },
+  {
+    quote:
+      "Nothing was too much for them and this made the entire process so much easier for us. The team were friendly, professional, and a pleasure to have around, making everything effortless from start to finish.",
+    name: "Pippa Hale",
+    role: "Private Event, Villa Almanita, Sitges",
   },
 ];
 
