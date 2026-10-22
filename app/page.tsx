@@ -359,7 +359,7 @@ export default function Home() {
                   />
                 </div>
                 <p className="text-[10px] font-semibold text-gold tracking-[0.3em] uppercase mb-1.5">
-                  {study.category} · {study.location}
+                  {study.location}
                 </p>
                 <p className="font-heading text-lg text-parchment">{study.title}</p>
               </Link>
