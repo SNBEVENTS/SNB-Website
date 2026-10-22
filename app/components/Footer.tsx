@@ -34,9 +34,11 @@ export default function Footer() {
             <ul className="space-y-3">
               {[
                 { label: "Home", href: "/" },
-                { label: "About", href: "/about" },
                 { label: "Services", href: "/services" },
-                { label: "Contact", href: "/contact" },
+                { label: "Portfolio", href: "/portfolio" },
+                { label: "Blog", href: "/blog" },
+                { label: "About", href: "/about" },
+                { label: "Get in Touch", href: "/contact" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -89,7 +91,7 @@ export default function Footer() {
 
         <div className="border-t border-ink-border pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <p className="text-xs text-muted">
-            © 2026 SNB Events Agency. All rights reserved.
+            © 2023–2026 SNB Events Agency. All rights reserved.
           </p>
           <p className="text-[10px] text-muted tracking-[0.25em] uppercase">
             Corporate Events · Barcelona & All of Spain

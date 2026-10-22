@@ -7,9 +7,11 @@ import { usePathname } from "next/navigation";
 import logo from "@/public/logo.png";
 
 const links = [
-  { label: "About", href: "/about" },
+  { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
   { label: "Portfolio", href: "/portfolio" },
+  { label: "Blog", href: "/blog" },
+  { label: "About", href: "/about" },
 ];
 
 export default function Nav() {
