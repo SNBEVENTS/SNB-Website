@@ -55,9 +55,9 @@ export default function About() {
           <div className="flex flex-col gap-8">
             <div className="overflow-hidden">
               <img
-                src="/team.jpg"
+                src="/team-duo.jpg"
                 alt="SNB Events Agency team"
-                className="w-full h-[480px] md:h-[580px] object-cover object-[center_20%]"
+                className="w-full h-[480px] md:h-[580px] object-cover object-center"
               />
             </div>
             <blockquote className="border-l-2 border-gold pl-8">
@@ -163,9 +163,9 @@ export default function About() {
       <section className="py-36 px-6 bg-ink relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/team.jpg"
+            src="/team-duo.jpg"
             alt=""
-            className="w-full h-full object-cover object-[center_20%] opacity-10"
+            className="w-full h-full object-cover object-center opacity-10"
             aria-hidden="true"
           />
         </div>
