@@ -102,7 +102,7 @@ export default function Home() {
       >
         <div className="absolute inset-x-0 top-0 bottom-14 md:bottom-[88px] z-0">
           <video
-            src="/video.mov"
+            src="/video.mp4"
             poster="/Hero.jpg"
             autoPlay
             muted
@@ -235,7 +235,7 @@ export default function Home() {
           loop
           playsInline
           aria-hidden="true"
-          className="w-full h-full object-cover object-center scale-[1.02]"
+          className="w-full h-full object-cover object-center"
         />
       </div>
 

@@ -11,9 +11,8 @@ function subscribe(onChange: () => void) {
 }
 
 /*
-  event-reel.mp4 is a 16:9 clip sitting inside a 720x1280 portrait frame — only
-  rows 437-842 carry picture, so 68% of every frame is black. A portrait hero
-  crops it sideways and would show all of that black, so phones get the still.
+  event-reel.mp4 is 16:9. A portrait hero crops it sideways, which on a phone
+  would leave a letterbox strip in a mostly empty box, so phones get the still.
 
   The video has to mount and unmount rather than use `hidden md:block`, because
   a display:none video with autoPlay still downloads: measured on a 375px
@@ -40,9 +39,6 @@ export default function HeroMedia() {
         className="absolute inset-0 w-full h-full object-cover object-[center_60%]"
       />
       {wide && (
-        // scale-[1.45] pushes the letterbox bars outside the hero. It holds
-        // until the window is taller than about 0.81 x its width, which covers
-        // a maximised browser on any normal laptop or monitor.
         <video
           src="/event-reel.mp4"
           autoPlay
@@ -50,7 +46,7 @@ export default function HeroMedia() {
           loop
           playsInline
           aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover object-center scale-[1.45]"
+          className="absolute inset-0 w-full h-full object-cover object-center"
         />
       )}
     </>
