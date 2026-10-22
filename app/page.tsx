@@ -99,7 +99,7 @@ export default function Home() {
             loop
             playsInline
             aria-hidden="true"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-[center_35%]"
           />
           <div className="absolute inset-0 bg-ink/60" />
         </div>
