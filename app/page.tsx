@@ -91,11 +91,15 @@ export default function Home() {
       {/* Hero */}
       <section className="min-h-screen flex items-end pb-20 md:pb-28 px-6 relative overflow-hidden">
         <div className="absolute inset-x-0 top-0 bottom-14 md:bottom-[88px] z-0">
-          <img
-            src="/Hero.jpg"
-            alt=""
-            className="w-full h-full object-cover object-center"
+          <video
+            src="/video.mov"
+            poster="/Hero.jpg"
+            autoPlay
+            muted
+            loop
+            playsInline
             aria-hidden="true"
+            className="w-full h-full object-cover object-[center_35%]"
           />
           <div className="absolute inset-0 bg-ink/60" />
         </div>
