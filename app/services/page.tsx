@@ -183,7 +183,7 @@ export default function Services() {
       </section>
 
       {/* CTA */}
-      <section className="py-36 md:py-48 px-6 bg-ink relative overflow-hidden">
+      <section className="py-24 md:py-32 px-6 bg-ink relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="/brand-activation.jpg"
@@ -196,7 +196,7 @@ export default function Services() {
           <p className="text-[11px] font-semibold text-gold tracking-[0.4em] uppercase mb-8">
             Have Something in Mind?
           </p>
-          <h2 className="font-heading text-[clamp(2.5rem,6vw,6rem)] text-surface leading-[0.95] tracking-tight mb-14 max-w-3xl">
+          <h2 className="font-heading text-[clamp(2.25rem,5vw,4.5rem)] text-surface leading-[1.05] tracking-tight mb-10 max-w-3xl">
             Let&apos;s Build Something Extraordinary
           </h2>
           <Link
