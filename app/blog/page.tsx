@@ -1,4 +1,22 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog | Corporate Event Ideas & Advice | SNB Events Agency",
+  description:
+    "Practical advice on planning corporate events in Barcelona: offsites, team building, brand launches and end-of-year parties.",
+  // openGraph replaces the root's wholesale rather than merging into it, so
+  // url, siteName and the image are repeated here or they would be dropped.
+  openGraph: {
+    title: "Blog | Corporate Event Ideas & Advice | SNB Events Agency",
+    description:
+      "Practical advice on planning corporate events in Barcelona: offsites, team building, brand launches and end-of-year parties.",
+    url: "https://www.snbagency.com/blog",
+    siteName: "SNB Events Agency",
+    images: [{ url: "/agency.JPG", width: 1200, height: 630, alt: "SNB Events Agency" }],
+    type: "website",
+  },
+};
 
 export const posts = [
   {

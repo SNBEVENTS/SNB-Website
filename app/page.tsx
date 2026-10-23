@@ -1,6 +1,22 @@
 import Link from "next/link";
 import { cases } from "./portfolio/cases";
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Corporate Event Agency in Barcelona | SNB Events Agency",
+  description:
+    "Corporate event agency in Barcelona and across Spain. Offsites, conferences, company parties, team building and brand launches, run end to end.",
+  openGraph: {
+    title: "Corporate Event Agency in Barcelona | SNB Events Agency",
+    description:
+      "Corporate event agency in Barcelona and across Spain. Offsites, conferences, company parties, team building and brand launches, run end to end.",
+    url: "https://www.snbagency.com",
+    siteName: "SNB Events Agency",
+    images: [{ url: "/agency.JPG", width: 1200, height: 630, alt: "SNB Events Agency" }],
+    type: "website",
+  },
+};
 import puigLogo from "@/public/logos/puig.png";
 import deelLogo from "@/public/logos/deel.png";
 import preplyLogo from "@/public/logos/preply.png";

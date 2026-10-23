@@ -3,6 +3,24 @@ import Image from "next/image";
 import Link from "next/link";
 import InstagramIcon from "../components/InstagramIcon";
 import logo from "@/public/logo.png";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact | Corporate Event Planning in Barcelona",
+  description:
+    "Tell us about your corporate event in Barcelona — offsite, conference, party, team building or launch. We reply to every enquiry within 48 hours.",
+  // openGraph replaces the root's wholesale rather than merging into it, so
+  // url, siteName and the image are repeated here or they would be dropped.
+  openGraph: {
+    title: "Contact | Corporate Event Planning in Barcelona",
+    description:
+      "Tell us about your corporate event in Barcelona — offsite, conference, party, team building or launch. We reply to every enquiry within 48 hours.",
+    url: "https://www.snbagency.com/contact",
+    siteName: "SNB Events Agency",
+    images: [{ url: "/agency.JPG", width: 1200, height: 630, alt: "SNB Events Agency" }],
+    type: "website",
+  },
+};
 
 export default function Contact() {
   return (
