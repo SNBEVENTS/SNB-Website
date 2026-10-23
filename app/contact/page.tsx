@@ -10,7 +10,7 @@ export default function Contact() {
       {/* Hero — split: B&W photo left, contact info right */}
       <section className="grid grid-cols-1 md:grid-cols-2 pt-16 md:pt-0">
         {/* Left — B&W photo with text overlay */}
-        <div className="relative overflow-hidden min-h-[42vh] md:min-h-[600px]">
+        <div className="relative overflow-hidden min-h-[32vh] md:min-h-[600px]">
           <img
             src="/team-ari.jpg"
             alt="SNB Event Agency team"
