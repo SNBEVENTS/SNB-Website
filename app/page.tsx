@@ -244,7 +244,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center">
           <div className="overflow-hidden">
             <img
-              src="/team-duo.jpg"
+              src="/team-four.jpg"
               alt="SNB Events Agency team"
               className="w-full h-[500px] md:h-[620px] object-cover object-center"
             />
