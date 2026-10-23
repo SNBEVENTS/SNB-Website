@@ -1,5 +1,12 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import HeroMedia from "./HeroMedia";
+
+export const metadata: Metadata = {
+  title: "Corporate Event Services in Barcelona | SNB Events Agency",
+  description:
+    "Corporate event planning and production in Barcelona and across Spain: offsites and retreats, conferences and sales kick-offs, summer and Christmas parties, team building, product launches and brand activations. Venue sourcing, catering, AV production, transport and on-site management handled end to end.",
+};
 
 const services = [
   {
@@ -8,12 +15,16 @@ const services = [
     badge: "DMC Barcelona",
     tagline: "Strategy. Alignment. Impact.",
     description:
-      "We design and produce corporate offsites and retreats that go beyond the hotel conference room. Whether you're taking your leadership team off-grid to reset and re-align, or bringing together a global organisation for a company-wide summit, we build events that create the conditions for real strategic work.",
+      "We design and produce corporate offsites, company retreats and incentive trips that go beyond the hotel conference room. As a destination management company based in Barcelona, we handle venue sourcing, hotel accommodation, airport transfers, meeting rooms, AV production and delegate management across Catalonia, Sitges, the Costa Brava and the rest of Spain. Whether you are taking your leadership team off-grid to reset and re-align, or bringing a global organisation together for a company-wide summit or sales kick-off, we build events that create the conditions for real strategic work.",
     details: [
-      "Leadership summits",
-      "Company-wide conferences",
+      "Leadership summits & board retreats",
+      "Conferences, congresses & seminars",
+      "Sales kick-offs & annual meetings",
       "Strategic planning offsites",
-      "Board & executive retreats",
+      "Incentive travel & reward trips",
+      "Venue sourcing & hotel accommodation",
+      "Airport transfers & group transport",
+      "Delegate registration & management",
     ],
     image: "/villa-rosa.jpg",
     imagePosition: "object-[center_35%]",
@@ -24,12 +35,16 @@ const services = [
     badge: null,
     tagline: "From summer parties to end-of-year celebrations.",
     description:
-      "Not every event needs to be a landmark moment — but every event deserves to be done well. We help local businesses and growing companies organise standout staff parties, summer socials, and end-of-year celebrations. Whether you're a team of 20 or 200, we handle the planning and logistics so you can show up and enjoy it.",
+      "Not every event needs to be a landmark moment — but every event deserves to be done well. We plan and manage staff parties, summer socials, Christmas and end-of-year celebrations, company anniversaries, gala dinners and award ceremonies for local businesses and growing companies. Venue hire, catering and bar, entertainment and DJs, styling and decor, furniture hire, photography and staffing are all arranged and run by us. Whether you are a team of 20 or 200, we handle the planning and logistics so you can show up and enjoy it.",
     details: [
-      "Summer & seasonal parties",
-      "End-of-year celebrations",
-      "Company socials & away days",
-      "Local business events",
+      "Summer parties & seasonal socials",
+      "Christmas & end-of-year celebrations",
+      "Company anniversaries & milestones",
+      "Gala dinners & award ceremonies",
+      "Staff away days & kick-off meetings",
+      "Venue hire across Barcelona",
+      "Catering, bar & entertainment",
+      "Event styling, decor & furniture hire",
     ],
     image: "/Hero.jpg",
     imagePosition: "object-center",
@@ -41,12 +56,16 @@ const services = [
     badge: null,
     tagline: "Invest in your people.",
     description:
-      "Culture doesn't build itself — it's built in moments. We create team building events and shared experiences that reconnect people, rebuild momentum, and reinforce what your organisation values. From hands-on activity days to full-programme team experiences, we design environments that bring out the best in your people.",
+      "Culture doesn't build itself — it's built in moments. We create team building events, away days and shared experiences that reconnect people, rebuild momentum and reinforce what your organisation values. From sailing regattas, treasure hunts and gastronomy workshops to hands-on activity days, onboarding events and multi-day team programmes, we design environments that bring out the best in your people — and handle the activity booking, group transport, catering and on-site coordination that make them run.",
     details: [
-      "Team building days",
-      "Activity & challenge events",
-      "Culture & values sessions",
+      "Team building days & activities",
+      "Away days & offsite programmes",
+      "Culture & values workshops",
+      "Sailing, treasure hunts & gastronomy",
+      "Onboarding & new-starter events",
+      "Employee engagement & wellbeing days",
       "Employee milestone celebrations",
+      "Activity booking & group coordination",
     ],
     image: "/team-building.jpg",
     imagePosition: "object-[center_55%]",
@@ -57,12 +76,16 @@ const services = [
     badge: null,
     tagline: "Make the market take notice.",
     description:
-      "A great brand launch is a statement. It sets the tone for everything that follows. We create launch experiences that are bold, intentional, and built for impact — from intimate media previews to large-scale consumer activations. A brand event isn't just an event; it's a positioning exercise.",
+      "A great brand launch is a statement. It sets the tone for everything that follows. We produce product launches, press previews, influencer and media events, pop-ups, showroom openings, roadshows and large-scale consumer activations — from the concept and set design through to staging, lighting, sound, branding and content capture. A brand event isn't just an event; it's a positioning exercise.",
     details: [
-      "Product launches",
-      "Brand activations",
-      "Press & media events",
-      "Consumer experiences",
+      "Product launches & press previews",
+      "Brand activations & pop-ups",
+      "Influencer & media events",
+      "Showroom openings & roadshows",
+      "Trade shows, stands & exhibitions",
+      "Consumer experiences & sampling",
+      "Set design, staging & production",
+      "Lighting, sound & audiovisual",
     ],
     image: "/brand-activation-fomo.jpg",
     imagePosition: "object-[center_55%]",
@@ -84,7 +107,9 @@ export default function Services() {
             What We Do
           </h1>
           <p className="text-xl text-surface/70 max-w-2xl leading-relaxed">
-            You tell us what you want — we handle every last detail and make it brilliant.
+            Full-service corporate event planning, production and event management in Barcelona
+            and across Spain. You tell us what you want — we handle venues, suppliers, catering,
+            production and every last detail on the day.
           </p>
         </div>
       </section>
