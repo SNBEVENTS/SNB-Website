@@ -8,9 +8,9 @@ export default function Contact() {
   return (
     <>
       {/* Hero — split: B&W photo left, contact info right */}
-      <section className="min-h-screen grid grid-cols-1 md:grid-cols-2 pt-16 md:pt-0">
+      <section className="grid grid-cols-1 md:grid-cols-2 pt-16 md:pt-0">
         {/* Left — B&W photo with text overlay */}
-        <div className="relative overflow-hidden min-h-[55vh] md:min-h-screen">
+        <div className="relative overflow-hidden min-h-[42vh] md:min-h-[600px]">
           <img
             src="/team-ari.jpg"
             alt="SNB Event Agency team"
@@ -21,7 +21,7 @@ export default function Contact() {
             <p className="text-[11px] font-semibold text-gold tracking-[0.4em] uppercase mb-5">
               Get In Touch
             </p>
-            <h1 className="font-heading text-[clamp(3.5rem,8vw,7rem)] text-surface leading-[0.92] tracking-tight">
+            <h1 className="font-heading text-[clamp(2.75rem,6vw,5rem)] text-surface leading-[0.95] tracking-tight">
               Let&apos;s<br /><em>Talk</em>
             </h1>
           </div>
