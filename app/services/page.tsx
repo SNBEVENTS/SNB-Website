@@ -183,7 +183,7 @@ export default function Services() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 md:py-32 px-6 bg-ink relative overflow-hidden">
+      <section className="py-12 md:py-16 px-6 bg-ink relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="/brand-activation.jpg"
