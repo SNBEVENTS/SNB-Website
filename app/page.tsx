@@ -369,7 +369,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-36 md:py-48 px-6 bg-ink relative overflow-hidden">
+      <section className="py-24 md:py-32 px-6 bg-ink relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="/Hero.jpg"
