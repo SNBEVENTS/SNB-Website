@@ -382,7 +382,7 @@ export default function Home() {
           <p className="text-[11px] font-semibold text-gold tracking-[0.4em] uppercase mb-8">
             Let&apos;s Work Together
           </p>
-          <h2 className="font-heading text-[clamp(2.5rem,7vw,7rem)] text-surface leading-[0.95] tracking-tight mb-14 max-w-3xl">
+          <h2 className="font-heading text-[clamp(2.25rem,5vw,4.5rem)] text-surface leading-[1.05] tracking-tight mb-10 max-w-3xl">
             Ready to Plan Your Next Event?
           </h2>
           <Link
