@@ -8,7 +8,13 @@ export default function Contact() {
   return (
     <>
       {/* Hero — split: B&W photo left, contact info right */}
-      <section className="grid grid-cols-1 md:grid-cols-2 pt-16 md:pt-0">
+      {/*
+        pt-36 (144px) clears the fixed bar, which is 137px tall, so the whole
+        photo is visible on a phone instead of its top ~73px sitting behind it.
+        Desktop keeps pt-0: there the dark column runs edge to edge to the top
+        of the page, and padding would break that split.
+      */}
+      <section className="grid grid-cols-1 md:grid-cols-2 pt-36 md:pt-0">
         {/* Left — B&W photo with text overlay */}
         <div className="relative overflow-hidden min-h-[32vh] md:min-h-[600px]">
           <img
