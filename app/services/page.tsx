@@ -129,7 +129,7 @@ export default function Services() {
       <section className="px-6">
         <div className="max-w-7xl mx-auto divide-y divide-ink-border border-b border-ink-border">
           {services.map((service) => (
-            <div key={service.n} className="py-20 md:py-28">
+            <div key={service.n} className="py-12 md:py-16">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16">
                 {/* Left column — number, title, tagline, photo */}
                 <div className="md:col-span-4">
