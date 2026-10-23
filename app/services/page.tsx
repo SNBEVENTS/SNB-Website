@@ -175,6 +175,15 @@ export default function Services() {
                       ))}
                     </div>
                   </div>
+
+                  <div className="mt-8">
+                    <Link
+                      href="/portfolio"
+                      className="text-[11px] font-semibold text-gold tracking-[0.25em] uppercase border-b border-gold pb-1 hover:text-gold-light hover:border-gold-light transition-colors"
+                    >
+                      See Our Portfolio →
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
