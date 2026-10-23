@@ -241,12 +241,12 @@ export default function Home() {
 
       {/* Why SNB — with team photo */}
       <section className="pt-24 md:pt-32 pb-16 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
           <div className="overflow-hidden">
             <img
               src="/team-four.jpg"
               alt="SNB Events Agency team"
-              className="w-full h-[500px] md:h-[620px] object-cover object-center"
+              className="w-full h-[500px] md:h-full object-cover object-center"
             />
           </div>
 
