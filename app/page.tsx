@@ -241,61 +241,70 @@ export default function Home() {
 
       {/* Why SNB — with team photo */}
       <section className="pt-24 md:pt-32 pb-16 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
-          <div className="overflow-hidden">
-            <img
-              src="/team-four.jpg"
-              alt="SNB Events Agency team"
-              className="w-full h-[500px] md:h-full object-cover object-center"
-            />
+        <div className="max-w-7xl mx-auto">
+          {/*
+            The photo is 5:4 and the copy runs to ~900px, so a side-by-side
+            column can only match that height by cropping the sides off. Instead
+            the photo keeps its own shape next to the intro, and the three
+            points run underneath across the full width — which uses the space
+            rather than leaving a hole under the photo.
+          */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-24 items-start">
+            <div className="overflow-hidden">
+              <img
+                src="/team-four.jpg"
+                alt="SNB Events Agency team"
+                className="w-full h-[500px] object-cover object-center md:h-auto"
+              />
+            </div>
+
+            <div>
+              <p className="text-[11px] font-semibold text-muted tracking-[0.3em] uppercase mb-6">
+                Why SNB Events Agency
+              </p>
+              <h2 className="font-heading text-3xl md:text-5xl text-parchment leading-[1.1] mb-8">
+                Your Event, Exactly How You Want It
+              </h2>
+              <p className="text-muted leading-relaxed mb-5">
+                You tell us what you&apos;re dreaming of and we make it happen — handling every single
+                thing in between. We&apos;re flexible, we move fast, and we know exactly who to call.
+              </p>
+              <p className="text-muted leading-relaxed">
+                No two events look the same because no two clients are the same. Everything we do is
+                personalised to you, your team, and what you&apos;re trying to achieve.
+              </p>
+            </div>
           </div>
 
-          <div>
-            <p className="text-[11px] font-semibold text-muted tracking-[0.3em] uppercase mb-6">
-              Why SNB Events Agency
-            </p>
-            <h2 className="font-heading text-3xl md:text-5xl text-parchment leading-[1.1] mb-8">
-              Your Event, Exactly How You Want It
-            </h2>
-            <p className="text-muted leading-relaxed mb-5">
-              You tell us what you&apos;re dreaming of and we make it happen — handling every single
-              thing in between. We&apos;re flexible, we move fast, and we know exactly who to call.
-            </p>
-            <p className="text-muted leading-relaxed mb-10">
-              No two events look the same because no two clients are the same. Everything we do is
-              personalised to you, your team, and what you&apos;re trying to achieve.
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 border-t border-ink-border mt-14 md:mt-20 pt-12">
+            {[
+              {
+                label: "Experienced & Multilingual",
+                desc: "Years of high-stakes event delivery across industries and languages. We work seamlessly with international clients and cross-border briefs.",
+              },
+              {
+                label: "Flexible & Detail-Obsessed",
+                desc: "When things shift — as they always do — we adapt without losing grip on what matters. No brief is too specific, no request too unusual.",
+              },
+              {
+                label: "Quick to Respond & Results-Driven",
+                desc: "Your time matters. Expect fast, clear communication and events that deliver real business outcomes.",
+              },
+            ].map((item) => (
+              <div key={item.label}>
+                <h3 className="font-heading text-lg text-parchment mb-2">{item.label}</h3>
+                <p className="text-sm text-muted leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
 
-            <div className="divide-y divide-ink-border">
-              {[
-                {
-                  label: "Experienced & Multilingual",
-                  desc: "Years of high-stakes event delivery across industries and languages. We work seamlessly with international clients and cross-border briefs.",
-                },
-                {
-                  label: "Flexible & Detail-Obsessed",
-                  desc: "When things shift — as they always do — we adapt without losing grip on what matters. No brief is too specific, no request too unusual.",
-                },
-                {
-                  label: "Quick to Respond & Results-Driven",
-                  desc: "Your time matters. Expect fast, clear communication and events that deliver real business outcomes.",
-                },
-              ].map((item) => (
-                <div key={item.label} className="py-8">
-                  <h3 className="font-heading text-lg text-parchment mb-2">{item.label}</h3>
-                  <p className="text-sm text-muted leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-10">
-              <Link
-                href="/about"
-                className="text-[11px] font-semibold text-gold tracking-[0.25em] uppercase border-b border-gold pb-1 hover:text-gold-light hover:border-gold-light transition-colors"
-              >
-                About Us →
-              </Link>
-            </div>
+          <div className="mt-12">
+            <Link
+              href="/about"
+              className="text-[11px] font-semibold text-gold tracking-[0.25em] uppercase border-b border-gold pb-1 hover:text-gold-light hover:border-gold-light transition-colors"
+            >
+              About Us →
+            </Link>
           </div>
         </div>
       </section>
