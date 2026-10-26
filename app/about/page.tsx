@@ -183,7 +183,7 @@ export default function About() {
       </section>
 
       {/* From Brief to Brilliant — with photo */}
-      <section className="pt-10 md:pt-12 pb-24 md:pb-32 px-6 bg-ink-raised">
+      <section className="pt-10 md:pt-12 pb-12 md:pb-16 px-6 bg-ink-raised">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-start">
             <div className="md:sticky md:top-32">
