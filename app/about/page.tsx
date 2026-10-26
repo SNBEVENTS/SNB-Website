@@ -58,7 +58,10 @@ export default function About() {
               We Plan It.<br />We Run It.<br /><em>You Love It.</em>
             </h1>
             <p className="md:col-span-5 text-xl text-muted leading-relaxed md:pb-2">
-              SNB Events Agency is your full-service corporate events partner in Barcelona. We take everything off your plate so you can focus on showing up and enjoying it.
+              SNB Events Agency is your full-service corporate events partner in Barcelona. From
+              the first brief to the last guest leaving, we handle the venue, the suppliers, the
+              production and every piece of logistics in between — so you can focus on showing up
+              and enjoying it.
             </p>
           </div>
         </div>
