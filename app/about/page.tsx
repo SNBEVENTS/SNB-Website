@@ -149,14 +149,28 @@ export default function About() {
         </div>
       </section>
 
-      {/* Photo strip */}
-      <div className="w-full h-[50vh] md:h-[65vh] overflow-hidden">
-        <img
-          src="/about-banner.jpg"
-          alt="SNB Events Agency event setup"
-          className="w-full h-full object-cover object-center"
-        />
-      </div>
+      {/* Our team */}
+      {/* No vertical padding of its own: the Story section above and the
+          section below already supply it, which is what the full-bleed photo
+          strip this replaces relied on too. */}
+      <section className="px-6">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="font-heading text-3xl md:text-5xl text-parchment mb-10 md:mb-14">
+            Our Team
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+            {[1, 2, 3, 4].map((n) => (
+              <div key={n} className="overflow-hidden aspect-[3/4]">
+                <img
+                  src={`/team-${n}.jpg`}
+                  alt="SNB Events Agency team member"
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* From Brief to Brilliant — with photo */}
       <section className="py-24 md:py-32 px-6 bg-ink-raised">
