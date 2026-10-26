@@ -11,7 +11,7 @@ const EVENT_TYPES = [
 ];
 
 const inputClass =
-  "w-full bg-white/10 border border-white/20 px-4 py-3.5 text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-white/60 transition-colors";
+  "w-full bg-surface border border-muted px-4 py-3.5 text-sm text-parchment placeholder:text-muted focus:outline-none focus:border-parchment transition-colors";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -65,11 +65,11 @@ export default function ContactForm() {
     return (
       <div className="py-16 border border-surface/20">
         <div className="text-center px-10">
-          <div className="w-10 h-px bg-surface/40 mx-auto mb-8" />
-          <h3 className="font-heading text-3xl text-surface mb-4">
+          <div className="w-10 h-px bg-ink-border mx-auto mb-8" />
+          <h3 className="font-heading text-3xl text-parchment mb-4">
             Thank You
           </h3>
-          <p className="text-surface/60 leading-relaxed">
+          <p className="text-parchment/70 leading-relaxed">
             We&apos;ve received your enquiry and will be in touch within 48 hours.
           </p>
         </div>
@@ -81,7 +81,7 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <label className="block text-[11px] font-semibold text-surface/60 tracking-[0.25em] uppercase mb-3">
+          <label className="block text-[11px] font-semibold text-parchment/70 tracking-[0.25em] uppercase mb-3">
             Name
           </label>
           <input
@@ -95,7 +95,7 @@ export default function ContactForm() {
           />
         </div>
         <div>
-          <label className="block text-[11px] font-semibold text-surface/60 tracking-[0.25em] uppercase mb-3">
+          <label className="block text-[11px] font-semibold text-parchment/70 tracking-[0.25em] uppercase mb-3">
             Company
           </label>
           <input
@@ -111,7 +111,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="block text-[11px] font-semibold text-surface/60 tracking-[0.25em] uppercase mb-3">
+        <label className="block text-[11px] font-semibold text-parchment/70 tracking-[0.25em] uppercase mb-3">
           Email
         </label>
         <input
@@ -126,7 +126,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="block text-[11px] font-semibold text-surface/60 tracking-[0.25em] uppercase mb-3">
+        <label className="block text-[11px] font-semibold text-parchment/70 tracking-[0.25em] uppercase mb-3">
           Event Type
         </label>
         <select
@@ -148,7 +148,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="block text-[11px] font-semibold text-surface/60 tracking-[0.25em] uppercase mb-3">
+        <label className="block text-[11px] font-semibold text-parchment/70 tracking-[0.25em] uppercase mb-3">
           Event Date
         </label>
         <input
@@ -161,7 +161,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="block text-[11px] font-semibold text-surface/60 tracking-[0.25em] uppercase mb-3">
+        <label className="block text-[11px] font-semibold text-parchment/70 tracking-[0.25em] uppercase mb-3">
           Message
         </label>
         <textarea
@@ -176,7 +176,7 @@ export default function ContactForm() {
       </div>
 
       {error && (
-        <p className="text-sm text-white border border-white/40 bg-white/10 px-4 py-3">
+        <p className="text-sm text-parchment border border-ink-border bg-surface px-4 py-3">
           {error} Please email us directly at{" "}
           <a href="mailto:info@strawsnberries.com" className="underline">
             info@strawsnberries.com
@@ -188,7 +188,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={sending}
-        className="inline-flex items-center gap-3 bg-surface text-forest px-9 py-4 text-[11px] font-semibold tracking-[0.25em] uppercase hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed"
+        className="inline-flex items-center gap-3 bg-ink text-surface px-9 py-4 text-[11px] font-semibold tracking-[0.25em] uppercase hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {sending ? "Sending…" : "Send Enquiry →"}
       </button>

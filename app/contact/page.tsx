@@ -119,13 +119,13 @@ export default function Contact() {
       </section>
 
       {/* Form section */}
-      <section className="py-24 md:py-32 px-6 bg-forest">
+      <section className="py-24 md:py-32 px-6 bg-ink-raised">
         <div className="max-w-4xl mx-auto">
           <div className="mb-14">
-            <p className="text-[11px] font-semibold text-surface/60 tracking-[0.3em] uppercase mb-4">
+            <p className="text-[11px] font-semibold text-parchment/70 tracking-[0.3em] uppercase mb-4">
               Send Us a Brief
             </p>
-            <h2 className="font-heading text-3xl md:text-5xl text-surface">
+            <h2 className="font-heading text-3xl md:text-5xl text-parchment">
               Tell Us About Your Event
             </h2>
           </div>
