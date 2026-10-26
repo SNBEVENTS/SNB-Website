@@ -87,7 +87,7 @@ export default function About() {
       </section>
 
       {/* Story */}
-      <section className="pt-12 md:pt-16 pb-24 md:pb-32 px-6">
+      <section className="pt-12 md:pt-16 pb-12 md:pb-16 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
           <div className="flex flex-col gap-8">
             <div className="overflow-hidden">
@@ -155,7 +155,7 @@ export default function About() {
           strip this replaces relied on too. */}
       <section className="px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="font-heading text-3xl md:text-5xl text-parchment mb-10 md:mb-14">
+          <h2 className="font-heading text-3xl md:text-5xl text-parchment mb-6 md:mb-8">
             Our Team
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
