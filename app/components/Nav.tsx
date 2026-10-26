@@ -6,6 +6,11 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import logo from "@/public/logo.png";
 
+// Routes whose hero sits under the bar. Kept in step with the data-hero
+// markers by hand: the server cannot see the DOM, and without this the bar
+// paints solid on first load and then flips, which reads as a flash.
+const HERO_ROUTES = new Set(["/", "/contact"]);
+
 const links = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
@@ -42,10 +47,10 @@ export default function Nav() {
   const overHero = useSyncExternalStore(
     subscribeToScroll,
     isOverHero,
-    // Server and first paint: the home page is the one with a hero, and it is
-    // rendered at the top, so the bar starts transparent there and solid
-    // everywhere else. Anything else would flash the wrong colour.
-    () => pathname === "/"
+    // Server and first paint: a hero page is rendered at the top, so the bar
+    // starts transparent there and solid everywhere else. Anything else would
+    // flash the wrong colour.
+    () => HERO_ROUTES.has(pathname)
   );
 
   // Solid whenever the hero is not behind the bar — and always while the mobile

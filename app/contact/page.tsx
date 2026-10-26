@@ -27,14 +27,17 @@ export default function Contact() {
     <>
       {/* Hero — split: B&W photo left, contact info right */}
       {/*
-        pt-36 (144px) clears the fixed bar, which is 137px tall, so the whole
-        photo is visible on a phone instead of its top ~73px sitting behind it.
-        Desktop keeps pt-0: there the dark column runs edge to edge to the top
-        of the page, and padding would break that split.
+        data-hero: the bar goes transparent while this is behind it, so the
+        hero has to run to the top of the page on every breakpoint — with
+        padding here the bar would be see-through over the cream page
+        background and the white logo would vanish.
+
+        The phone height is 40vh rather than the 23vh of visible photo we
+        want: the bar covers 137px of it, leaving ~188px on screen.
       */}
-      <section className="grid grid-cols-1 md:grid-cols-2 pt-36 md:pt-0">
+      <section data-hero className="grid grid-cols-1 md:grid-cols-2">
         {/* Left — B&W photo with text overlay */}
-        <div className="relative overflow-hidden h-[23vh] md:h-auto md:min-h-[600px]">
+        <div className="relative overflow-hidden h-[40vh] md:h-auto md:min-h-[600px]">
           <img
             src="/team-ari.jpg"
             alt="SNB Event Agency team"
