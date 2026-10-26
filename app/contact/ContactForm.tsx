@@ -11,7 +11,7 @@ const EVENT_TYPES = [
 ];
 
 const inputClass =
-  "w-full bg-[#8c3e26]/50 border border-white/20 px-4 py-3.5 text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-white/60 transition-colors";
+  "w-full bg-white/10 border border-white/20 px-4 py-3.5 text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-white/60 transition-colors";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -188,7 +188,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={sending}
-        className="inline-flex items-center gap-3 bg-surface text-[#8c3e26] px-9 py-4 text-[11px] font-semibold tracking-[0.25em] uppercase hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed"
+        className="inline-flex items-center gap-3 bg-surface text-forest px-9 py-4 text-[11px] font-semibold tracking-[0.25em] uppercase hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {sending ? "Sending…" : "Send Enquiry →"}
       </button>
