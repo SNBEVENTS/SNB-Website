@@ -52,7 +52,7 @@ export default function Contact() {
         </div>
 
         {/* Right — contact details on dark background */}
-        <div className="bg-ink px-10 md:px-16 py-20 md:py-0 md:flex md:flex-col md:justify-center">
+        <div className="bg-ink px-10 md:px-16 py-20 md:pt-36 md:pb-12 md:flex md:flex-col md:justify-center">
           <Link href="/" className="inline-flex mb-10">
             <Image
               src={logo}
