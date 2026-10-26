@@ -87,7 +87,7 @@ export default function About() {
       </section>
 
       {/* Story */}
-      <section className="py-24 md:py-32 px-6">
+      <section className="pt-12 md:pt-16 pb-24 md:pb-32 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
           <div className="flex flex-col gap-8">
             <div className="overflow-hidden">
