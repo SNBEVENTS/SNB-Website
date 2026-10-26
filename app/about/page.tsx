@@ -221,7 +221,7 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section className="py-36 px-6 bg-ink relative overflow-hidden">
+      <section className="py-12 md:py-16 px-6 bg-ink relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="/team-duo.jpg"
