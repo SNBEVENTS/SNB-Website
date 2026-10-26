@@ -118,6 +118,25 @@ export default function About() {
                 business, understand people, and are obsessive about craft.
               </p>
               <p>
+                SNB Events Agency grew out of{" "}
+                {/* Linked to the canonical non-www host: www redirects there, and
+                    linking straight to it avoids the extra hop. A normal follow
+                    link — these are two businesses we own and the relationship
+                    is genuine. */}
+                <a
+                  href="https://strawsnberries.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-parchment underline decoration-gold underline-offset-4 hover:text-gold transition-colors"
+                >
+                  Straws &apos;n Berries
+                </a>
+                , the Barcelona events company we started for private celebrations — picnics,
+                parties, proposals and weddings. As the briefs got bigger and more corporate, we
+                built SNB Events Agency to handle them properly. Straws &apos;n Berries still looks
+                after private and social events; everything corporate comes here.
+              </p>
+              <p>
                 From the earliest conversations with a client to the last guest leaving the room,
                 we are fully committed to every detail. We take time to understand your objectives,
                 your audience, and what success actually means to you — then we build an experience
