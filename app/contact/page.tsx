@@ -1,8 +1,5 @@
 import ContactForm from "./ContactForm";
-import Image from "next/image";
-import Link from "next/link";
 import InstagramIcon from "../components/InstagramIcon";
-import logo from "@/public/logo.png";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -56,14 +53,7 @@ export default function Contact() {
 
         {/* Right — contact details on dark background */}
         <div className="bg-ink px-10 md:px-16 py-20 md:pt-36 md:pb-12 md:flex md:flex-col md:justify-center">
-          <Link href="/" className="inline-flex mb-10">
-            <Image
-              src={logo}
-              alt="SNB Event Agency"
-              className="h-11 w-auto object-contain invert opacity-90"
-            />
-          </Link>
-          <p className="text-surface/60 leading-relaxed mb-14 max-w-sm">
+          <p className="text-surface/60 leading-relaxed mb-10 max-w-sm">
             Whether you have a detailed brief or just a spark of an idea, we&apos;d love to hear
             from you. We respond to every enquiry personally.
           </p>
