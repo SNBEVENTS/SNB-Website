@@ -47,9 +47,6 @@ export default function About() {
       {/* Hero — with full team photo placeholder */}
       <section className="pt-40 pb-0 px-6">
         <div className="max-w-7xl mx-auto mb-12">
-          <p className="text-[11px] font-semibold text-muted tracking-[0.3em] uppercase mb-8">
-            About SNB Events Agency
-          </p>
           {/* Headline and intro side by side on desktop, stacked on a phone.
               items-end sets the intro on the headline's last line rather than
               floating it against the top of a three-line block. */}
@@ -57,10 +54,18 @@ export default function About() {
             {/* flex rather than a 12-column grid: a 7-column track was 692px
                 wide while the headline only needs ~290px, which pushed the
                 intro far out to the right. As a flex item the headline is only
-                as wide as its longest line, so the intro sits right beside it. */}
-            <h1 className="md:flex-none font-heading text-[clamp(3rem,6vw,6rem)] text-parchment leading-[0.95] tracking-tight">
-              We Plan It.<br />We Run It.<br /><em>You Love It.</em>
-            </h1>
+                as wide as its longest line, so the intro sits right beside it.
+
+                The eyebrow rides with the headline rather than sitting above
+                the whole row, so it labels the title instead of the section. */}
+            <div className="md:flex-none">
+              <p className="text-[11px] font-semibold text-muted tracking-[0.3em] uppercase mb-6">
+                About SNB Events Agency
+              </p>
+              <h1 className="font-heading text-[clamp(3rem,6vw,6rem)] text-parchment leading-[0.95] tracking-tight">
+                We Plan It.<br />We Run It.<br /><em>You Love It.</em>
+              </h1>
+            </div>
             <p className="text-xl text-muted leading-relaxed md:max-w-2xl md:pb-2">
               SNB Events Agency is your full-service corporate events partner in Barcelona. From the
               first brief to the last guest leaving, we handle the venue, the suppliers, the
