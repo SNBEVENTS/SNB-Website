@@ -53,11 +53,15 @@ export default function About() {
           {/* Headline and intro side by side on desktop, stacked on a phone.
               items-end sets the intro on the headline's last line rather than
               floating it against the top of a three-line block. */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-16 md:items-end">
-            <h1 className="md:col-span-7 font-heading text-[clamp(3rem,6vw,6rem)] text-parchment leading-[0.95] tracking-tight">
+          <div className="flex flex-col md:flex-row md:items-end gap-6 md:gap-12">
+            {/* flex rather than a 12-column grid: a 7-column track was 692px
+                wide while the headline only needs ~290px, which pushed the
+                intro far out to the right. As a flex item the headline is only
+                as wide as its longest line, so the intro sits right beside it. */}
+            <h1 className="md:flex-none font-heading text-[clamp(3rem,6vw,6rem)] text-parchment leading-[0.95] tracking-tight">
               We Plan It.<br />We Run It.<br /><em>You Love It.</em>
             </h1>
-            <p className="md:col-span-5 text-xl text-muted leading-relaxed md:pb-2">
+            <p className="text-xl text-muted leading-relaxed md:max-w-md md:pb-2">
               SNB Events Agency is your full-service corporate events partner in Barcelona. From
               the first brief to the last guest leaving, we handle the venue, the suppliers, the
               production and every piece of logistics in between — so you can focus on showing up
