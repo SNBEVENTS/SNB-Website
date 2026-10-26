@@ -61,11 +61,13 @@ export default function About() {
             <h1 className="md:flex-none font-heading text-[clamp(3rem,6vw,6rem)] text-parchment leading-[0.95] tracking-tight">
               We Plan It.<br />We Run It.<br /><em>You Love It.</em>
             </h1>
-            <p className="text-xl text-muted leading-relaxed md:max-w-md md:pb-2">
-              SNB Events Agency is your full-service corporate events partner in Barcelona. From
-              the first brief to the last guest leaving, we handle the venue, the suppliers, the
-              production and every piece of logistics in between — so you can focus on showing up
-              and enjoying it.
+            <p className="text-xl text-muted leading-relaxed md:max-w-2xl md:pb-2">
+              SNB Events Agency is your full-service corporate events partner in Barcelona. From the
+              first brief to the last guest leaving, we handle the venue, the suppliers, the
+              production and every piece of logistics in between. We have spent years delivering
+              offsites, conferences, launches and celebrations across Catalonia and the rest of
+              Spain, for teams of twenty and for companies of several hundred — so you can focus on
+              showing up and enjoying it.
             </p>
           </div>
         </div>
