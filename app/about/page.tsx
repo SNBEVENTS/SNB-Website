@@ -153,7 +153,7 @@ export default function About() {
       {/* No vertical padding of its own: the Story section above and the
           section below already supply it, which is what the full-bleed photo
           strip this replaces relied on too. */}
-      <section className="px-6">
+      <section className="pb-4 md:pb-6 px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="font-heading text-3xl md:text-5xl text-parchment mb-6 md:mb-8">
             Our Team
@@ -183,7 +183,7 @@ export default function About() {
       </section>
 
       {/* From Brief to Brilliant — with photo */}
-      <section className="py-24 md:py-32 px-6 bg-ink-raised">
+      <section className="pt-10 md:pt-12 pb-24 md:pb-32 px-6 bg-ink-raised">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-start">
             <div className="md:sticky md:top-32">
