@@ -159,13 +159,23 @@ export default function About() {
             Our Team
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            {[1, 2, 3, 4].map((n) => (
-              <div key={n} className="overflow-hidden aspect-[3/4]">
-                <img
-                  src={`/team-${n}.jpg`}
-                  alt="SNB Events Agency team member"
-                  className="w-full h-full object-cover object-center"
-                />
+            {[
+              { img: "/team-1.jpg", name: "Mayke van Otterdijk" },
+              { img: "/team-2.jpg", name: "Babet Stockell" },
+              { img: "/team-3.jpg", name: "Arianne Middendorf" },
+              { img: "/team-4.jpg", name: "Sanne Kint" },
+            ].map((member) => (
+              <div key={member.name}>
+                <div className="overflow-hidden aspect-[3/4] mb-4">
+                  <img
+                    src={member.img}
+                    alt={member.name}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <p className="font-heading text-base md:text-lg text-parchment">
+                  {member.name}
+                </p>
               </div>
             ))}
           </div>
