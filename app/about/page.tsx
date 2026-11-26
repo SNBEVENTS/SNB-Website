@@ -181,8 +181,8 @@ export default function About() {
             {[
               { img: "/team-1.jpg", name: "Mayke van Otterdijk" },
               { img: "/team-2.jpg", name: "Babet Stockell" },
-              { img: "/team-3.jpg", name: "Arianne Middendorf" },
               { img: "/team-4.jpg", name: "Sanne Kint" },
+              { img: "/team-3.jpg", name: "Arianne Middendorf" },
             ].map((member) => (
               <div key={member.name}>
                 <div className="overflow-hidden aspect-[3/4] mb-4">
