@@ -4,13 +4,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Us | SNB Events Agency Barcelona",
   description:
-    "Meet the team behind SNB Events Agency — your full-service corporate events partner in Barcelona, planning and running events across Spain.",
+    "Meet the team behind SNB Events Agency, your full-service corporate events partner in Barcelona, planning and running events across Spain.",
   // openGraph replaces the root's wholesale rather than merging into it, so
   // url, siteName and the image are repeated here or they would be dropped.
   openGraph: {
     title: "About Us | SNB Events Agency Barcelona",
     description:
-      "Meet the team behind SNB Events Agency — your full-service corporate events partner in Barcelona, planning and running events across Spain.",
+      "Meet the team behind SNB Events Agency, your full-service corporate events partner in Barcelona, planning and running events across Spain.",
     url: "https://www.snbagency.com/about",
     siteName: "SNB Events Agency",
     images: [{ url: "/agency.JPG", width: 1200, height: 630, alt: "SNB Events Agency" }],
@@ -27,7 +27,7 @@ const steps = [
   {
     n: "02",
     title: "Concept & Design",
-    desc: "We develop a creative and logistical concept tailored to your goals — venues, formats, experiences, considered from the ground up.",
+    desc: "We develop a creative and logistical concept tailored to your goals. Venues, formats and experiences, considered from the ground up.",
   },
   {
     n: "03",
@@ -37,7 +37,7 @@ const steps = [
   {
     n: "04",
     title: "Delivery",
-    desc: "We run the event with precision and calm — so your team can be present and your guests experience it fully.",
+    desc: "We run the event with precision and calm, so your team can be present and your guests experience it fully.",
   },
 ];
 
@@ -71,7 +71,7 @@ export default function About() {
               first brief to the last guest leaving, we handle the venue, the suppliers, the
               production and every piece of logistics in between. We have spent years delivering
               offsites, conferences, launches and celebrations across Catalonia and the rest of
-              Spain, for teams of twenty and for companies of several hundred — so you can focus on
+              Spain, for teams of twenty and for companies of several hundred, so you can focus on
               showing up and enjoying it.
             </p>
           </div>
@@ -94,7 +94,7 @@ export default function About() {
                 &ldquo;Every event should do something. Create alignment. Shift culture. Launch a brand. Move people.&rdquo;
               </p>
               <cite className="block text-[11px] text-muted not-italic tracking-[0.2em] uppercase">
-                — SNB Events Agency
+                SNB Events Agency
               </cite>
             </blockquote>
             <div className="overflow-hidden">
@@ -130,7 +130,7 @@ export default function About() {
                 >
                   Straws &apos;n Berries
                 </a>
-                , the Barcelona events company we started for private celebrations — picnics,
+                , the Barcelona events company we started for private celebrations such as picnics,
                 parties, proposals and weddings. As the briefs got bigger and more corporate, we
                 built SNB Events Agency to handle them properly. Straws &apos;n Berries still looks
                 after private and social events; everything corporate comes here.
@@ -138,7 +138,7 @@ export default function About() {
               <p>
                 From the earliest conversations with a client to the last guest leaving the room,
                 we are fully committed to every detail. We take time to understand your objectives,
-                your audience, and what success actually means to you — then we build an experience
+                your audience, and what success actually means to you, and then we build an experience
                 that delivers it.
               </p>
               <p>
