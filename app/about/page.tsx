@@ -105,6 +105,13 @@ export default function About() {
                 — SNB Events Agency
               </cite>
             </blockquote>
+            <div className="overflow-hidden">
+              <img
+                src="/team-street.jpg"
+                alt="The SNB Events Agency team in Barcelona"
+                className="w-full h-56 md:h-72 object-cover object-center"
+              />
+            </div>
           </div>
 
           <div className="md:pt-16">
@@ -213,11 +220,15 @@ export default function About() {
                 From Brief<br />to Brilliant
               </h2>
 
+              {/* The box is roughly 2:1 and the photo is 1.4:1, so it crops top
+                  and bottom. Centred, that clipped the back row's heads; 25%
+                  keeps headroom above everyone and takes the extra off the
+                  bottom instead. */}
               <div className="overflow-hidden h-56 md:h-72">
                 <img
-                  src="/team-street.jpg"
-                  alt="The SNB Events Agency team in Barcelona"
-                  className="w-full h-full object-cover object-center"
+                  src="/team-full.jpg"
+                  alt="The full SNB Events Agency team"
+                  className="w-full h-full object-cover object-[center_25%]"
                 />
               </div>
             </div>
