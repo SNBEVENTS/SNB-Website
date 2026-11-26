@@ -39,6 +39,10 @@ const services = [
     ],
     image: "/villa-rosa.jpg",
     imagePosition: "object-[center_35%]",
+    deepLink: {
+      href: "/services/company-offsites-barcelona",
+      label: "Company Offsites in Barcelona",
+    },
   },
   {
     n: "02",
@@ -176,13 +180,21 @@ export default function Services() {
                     </div>
                   </div>
 
-                  <div className="mt-8">
+                  <div className="mt-8 flex flex-wrap items-center gap-x-10 gap-y-4">
                     <Link
                       href="/portfolio"
                       className="text-[11px] font-semibold text-gold tracking-[0.25em] uppercase border-b border-gold pb-1 hover:text-gold-light hover:border-gold-light transition-colors"
                     >
                       See Our Portfolio →
                     </Link>
+                    {service.deepLink && (
+                      <Link
+                        href={service.deepLink.href}
+                        className="text-[11px] font-semibold text-gold tracking-[0.25em] uppercase border-b border-gold pb-1 hover:text-gold-light hover:border-gold-light transition-colors"
+                      >
+                        {service.deepLink.label} →
+                      </Link>
+                    )}
                   </div>
                 </div>
               </div>
