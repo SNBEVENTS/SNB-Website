@@ -1,5 +1,6 @@
 import ContactForm from "./ContactForm";
 import InstagramIcon from "../components/InstagramIcon";
+import LinkedInIcon from "../components/LinkedInIcon";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -95,6 +96,21 @@ export default function Contact() {
               >
                 <InstagramIcon className="w-5 h-5" />
                 @snbeventsagency
+              </a>
+            </div>
+
+            <div>
+              <p className="text-[11px] font-semibold text-gold tracking-[0.3em] uppercase mb-3">
+                LinkedIn
+              </p>
+              <a
+                href="https://www.linkedin.com/company/12611675"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2.5 text-surface hover:text-gold transition-colors"
+              >
+                <LinkedInIcon className="w-5 h-5" />
+                SNB Events Agency
               </a>
             </div>
 

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "@/public/logo.png";
 import InstagramIcon from "./InstagramIcon";
+import LinkedInIcon from "./LinkedInIcon";
 
 export default function Footer() {
   return (
@@ -83,6 +84,17 @@ export default function Footer() {
                 >
                   <InstagramIcon className="w-4 h-4" />
                   Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/12611675"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 hover:text-parchment transition-colors"
+                >
+                  <LinkedInIcon className="w-4 h-4" />
+                  LinkedIn
                 </a>
               </li>
             </ul>
