@@ -215,8 +215,8 @@ export default function About() {
 
               <div className="overflow-hidden h-56 md:h-72">
                 <img
-                  src="/cheers.jpg"
-                  alt="Celebration at an SNB Events Agency event"
+                  src="/team-street.jpg"
+                  alt="The SNB Events Agency team in Barcelona"
                   className="w-full h-full object-cover object-center"
                 />
               </div>
