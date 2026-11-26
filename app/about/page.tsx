@@ -219,6 +219,18 @@ export default function About() {
               <h2 className="font-heading text-3xl md:text-5xl text-parchment leading-[1.1] mb-10">
                 From Brief<br />to Brilliant
               </h2>
+
+              {/* The box is roughly 2:1 and the photo is 1.4:1, so it crops top
+                  and bottom. Centred, that clipped the back row's heads; 25%
+                  keeps headroom above everyone and takes the extra off the
+                  bottom instead. */}
+              <div className="overflow-hidden h-56 md:h-72">
+                <img
+                  src="/team-full.jpg"
+                  alt="The full SNB Events Agency team"
+                  className="w-full h-full object-cover object-[center_25%]"
+                />
+              </div>
             </div>
 
             <div className="divide-y divide-ink-border border-y border-ink-border">
