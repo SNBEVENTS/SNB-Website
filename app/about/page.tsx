@@ -76,14 +76,6 @@ export default function About() {
             </p>
           </div>
         </div>
-
-        <div className="w-full h-[50vh] md:h-[70vh] overflow-hidden">
-          <img
-            src="/agency.JPG"
-            alt="SNB Event Agency neon sign"
-            className="w-full h-full object-cover object-center"
-          />
-        </div>
       </section>
 
       {/* Story */}
