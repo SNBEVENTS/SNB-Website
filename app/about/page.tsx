@@ -105,6 +105,13 @@ export default function About() {
                 — SNB Events Agency
               </cite>
             </blockquote>
+            <div className="overflow-hidden">
+              <img
+                src="/team-street.jpg"
+                alt="The SNB Events Agency team in Barcelona"
+                className="w-full h-56 md:h-72 object-cover object-center"
+              />
+            </div>
           </div>
 
           <div className="md:pt-16">
@@ -212,14 +219,6 @@ export default function About() {
               <h2 className="font-heading text-3xl md:text-5xl text-parchment leading-[1.1] mb-10">
                 From Brief<br />to Brilliant
               </h2>
-
-              <div className="overflow-hidden h-56 md:h-72">
-                <img
-                  src="/team-street.jpg"
-                  alt="The SNB Events Agency team in Barcelona"
-                  className="w-full h-full object-cover object-center"
-                />
-              </div>
             </div>
 
             <div className="divide-y divide-ink-border border-y border-ink-border">
