@@ -125,7 +125,7 @@ export default async function BlogPostPage({
           <img
             src={post.image}
             alt={post.imageAlt}
-            className="w-full h-full object-cover object-center"
+            className={`w-full h-full object-cover ${post.imagePosition ?? "object-center"}`}
           />
         </div>
       </section>
