@@ -16,6 +16,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pages: MetadataRoute.Sitemap = [
     { url: SITE, changeFrequency: "monthly", priority: 1 },
     { url: `${SITE}/services`, changeFrequency: "monthly", priority: 0.9 },
+    {
+      url: `${SITE}/services/company-offsites-barcelona`,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     { url: `${SITE}/portfolio`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE}/about`, changeFrequency: "yearly", priority: 0.7 },
     { url: `${SITE}/contact`, changeFrequency: "yearly", priority: 0.7 },
