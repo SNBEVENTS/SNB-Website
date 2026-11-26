@@ -245,7 +245,7 @@ export default function About() {
           <img
             src="/team-duo.jpg"
             alt=""
-            className="w-full h-full object-cover object-center opacity-10"
+            className="w-full h-full object-cover object-center opacity-5"
             aria-hidden="true"
           />
         </div>
