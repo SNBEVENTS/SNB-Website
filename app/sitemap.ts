@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { cases } from "./portfolio/cases";
+import { posts } from "./blog/posts";
 
 const SITE = "https://www.snbagency.com";
 
@@ -33,5 +34,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...pages, ...caseStudies];
+  const blogPosts: MetadataRoute.Sitemap = posts.map((post) => ({
+    url: `${SITE}/blog/${post.slug}`,
+    changeFrequency: "yearly",
+    priority: 0.6,
+  }));
+
+  return [...pages, ...caseStudies, ...blogPosts];
 }
